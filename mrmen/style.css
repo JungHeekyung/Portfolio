@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/* 'nanumsquare' */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* 'Noto Sans KR' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/* 'Bebas Neue' */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* 'Roboto Condensed' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+@font-face {
+  font-family: 'GT Pressura Mono Regular'; /* 내가 정해준 이름.*/
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('226f58ab113a6d821def90a7d6dc2427'),
+    url('../common/fonts/226f58ab113a6d821def90a7d6dc2427.woff2')
+      format('woff2'),
+    url('../common/fonts/226f58ab113a6d821def90a7d6dc2427.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GT Pressura Mono Light'; /* 내가 정해준 이름.*/
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('55996701a4199ae18957385be79a99d7'),
+    url('../common/fonts/55996701a4199ae18957385be79a99d7.woff2')
+      format('woff2'),
+    url('../common/fonts/55996701a4199ae18957385be79a99d7.woff') format('woff');
+}
+
+/* 변수 설정 */
+:root {
+  --main-font: 'Bebas Neue', Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+  --en-font: 'Roboto Condensed', 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --ko-font: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Malgun Gothic',
+    '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+  --romanNumber: 'nanumsquare', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+}
+
+body {
+  background-color: #a6e2ff;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Roboto Condensed', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.title span {
+  font-family: 'nanumsquare', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+h4 {
+  font-family: var(--ko-font);
+  font-weight: 700;
+  font-size: 13px;
+}
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+/***** header *****/
+header {
+  width: 100%;
+  overflow: hidden;
+}
+header .top {
+  width: 93.3333%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 23px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+header .hamburger {
+  width: 40px;
+  height: 100%;
+  background-color: #000;
+  text-indent: -9999px;
+  position: relative;
+}
+header .hamburger img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* 햄버거메뉴 */
+header .menu_wrapper {
+  width: 100%;
+  height: 430px;
+  background-color: #a6e2ff;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 111;
+  display: none;
+}
+
+header .menu_wrapper p {
+  font-family: 'GT Pressura Mono Regular', helvetica, 'Apple SD Gothic Neo',
+    sans-serif;
+  font-size: 10px;
+}
+header .menu_wrapper a {
+  display: block;
+  font-family: var(--main-font);
+  font-size: 34px;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+}
+header .menu_wrapper li:nth-child(1) {
+  margin-top: 90px;
+  border-top: 2px solid #000;
+}
+header .menu_wrapper .btn_close {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  text-indent: -9999px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #000 url(./images/btn_close.svg) no-repeat;
+}
+
+header .header_wrapper p {
+  font-family: 'GT Pressura Mono Regular', helvetica, 'Apple SD Gothic Neo',
+    sans-serif;
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 17px;
+}
+.logo {
+  width: 100%;
+  height: 77px;
+  display: flex;
+  margin-bottom: 40px;
+  gap: 20px;
+  /* overflow: hidden; */
+  animation: marquee 7s infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(-70%);
+  }
+}
+/* @media (hover: hover) and (min-width: 700px){
+.animated-title .content {-webkit-transform: translateY(calc(100% - 8rem)); transform: translateY(calc(100% - 8rem));}
+    } */
+/***** main *****/
+main {
+  min-width: 350px;
+  background: url(./images/bg_cloud1.svg) no-repeat 50% 2.3% / 108%;
+  /* background-color: #fff; */
+}
+main .character_wrapper {
+  width: 100%;
+  margin: 40px auto 0;
+  text-align: center;
+}
+main .video {
+  width: 93.3333%;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+main .video iframe {
+  width: 104%;
+  aspect-ratio: 4 / 3;
+  position: absolute;
+  top: -2px;
+  left: -7px;
+}
+
+main .title {
+  margin: 30px auto 40px;
+}
+
+main .ko {
+  font-family: var(--ko-font);
+  font-weight: 400;
+  font-size: 31px;
+  letter-spacing: -2px;
+  line-height: 35px;
+  background-color: #fff;
+  padding-bottom: 22px;
+}
+main .ko .bold {
+  font-weight: 700;
+}
+
+main .en {
+  font-family: var(--main-font);
+  font-size: 76px;
+  line-height: 75px;
+  background-color: #fff;
+  letter-spacing: -2px;
+}
+
+main .character_img {
+  background-color: #fff;
+  padding-top: 65px;
+  display: flex;
+  overflow: hidden;
+}
+main .character_img li {
+  width: 100%;
+  min-width: 100px;
+}
+main .character_img li div {
+  text-indent: -9999px;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;
+}
+main .character_img li:nth-child(2) div {
+  background: url(./images/character_03.svg) no-repeat 50% 50% / 80%;
+}
+main .character_img li:nth-child(3) div {
+  background: url(./images/character_04.svg) no-repeat 50% 50% / 112%;
+}
+main .character_img li:nth-child(4) div {
+  background: url(./images/character_05.svg) no-repeat 50% 50% / 85%;
+}
+
+main .character_img .m_none {
+  display: none;
+}
+
+main .btn_wrapper {
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  position: relative;
+}
+main .btn_wrapper .btn1 {
+  width: 210px;
+  height: 52px;
+  border: 2px solid #000;
+  font-family: var(--en-font);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 52px;
+  box-shadow: 2px 2px 0 #000;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+main .about_wrapper {
+  background-color: #205e7c;
+}
+main .about_wrapper .bg_light {
+  width: 100%;
+  background: url(./images/bg_light1.svg) no-repeat 50% 50% / cover;
+  text-indent: -9999px;
+  animation: light 0.5s infinite;
+}
+
+@keyframes light {
+  0% {
+    background: url(./images/bg_light1.svg) no-repeat 50% 50% / cover;
+  }
+  33.3333% {
+    background: url(./images/bg_light2.svg) no-repeat 50% 50% / cover;
+  }
+  66.6666% {
+    background: url(./images/bg_light3.svg) no-repeat 50% 50% / cover;
+  }
+}
+main .about_wrapper .title {
+  color: #fff;
+  margin: 16px auto 14px;
+}
+
+main .about_wrapper .sub_title {
+  width: 93.3333%;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 40px;
+  color: #ff6703;
+  box-shadow: 2px 2px 20px #000000c5;
+}
+
+main .about_wrapper .sub_title a {
+  background-color: #fffdbd;
+  display: block;
+  height: 95px;
+  border: 10px solid #028aca;
+  letter-spacing: -1px;
+  line-height: 95px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+main .about_wrapper .arrow {
+  display: block;
+  width: 27px;
+  margin: -27px auto;
+}
+main .about_wrapper .sub_title li a:hover {
+  background-color: #fffdbd;
+}
+
+.item {
+  margin-top: 80px;
+  opacity: 0;
+  transition: 0.5s ease-in;
+}
+
+.item.active {
+  margin-top: 0;
+  opacity: 1;
+}
+
+main .about_wrapper .sub_title li:nth-child(2) a,
+main .about_wrapper .sub_title li:nth-child(3) a,
+main .about_wrapper .sub_title li:nth-child(4) a {
+  border-top: none;
+}
+main .about_wrapper .sub_title li:nth-child(4) a {
+  color: #fff;
+  background-color: #3499ce;
+  font-size: 30px;
+}
+
+main .more_wrapper {
+  text-align: center;
+}
+main .more_wrapper .title {
+  margin-bottom: 0;
+}
+main .more_wrapper .more_img {
+  height: 200px;
+  text-indent: -9999px;
+}
+main .more_wrapper .app_shop li {
+  border-bottom: 2px solid #000;
+}
+main .more_wrapper .more_img1 {
+  margin: 50px auto 0;
+  background: url(./images/character_app.svg) no-repeat 50% 50% / contain;
+}
+main .more_wrapper .more_img2 {
+  height: 175px;
+  margin: 80px auto 10px;
+  background: url(./images/character_shop.svg) no-repeat 50% 50% / contain;
+}
+main .more_wrapper h3 {
+  font-family: var(--main-font);
+  font-size: 37px;
+}
+main .more_wrapper h3 span {
+  font-family: 'nanumsquare', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+main .more_wrapper .btn2 {
+  width: 90px;
+  height: 47px;
+  margin: 20px auto 43px;
+  text-indent: -9999px;
+  background: #000 url(./images/arrow1_w.svg) no-repeat 50% 50% / 30%;
+}
+
+main .txt_wrapper .txt1_wrapper {
+  display: flex;
+  border-bottom: 2px solid #000;
+  text-align: left;
+}
+main .txt_wrapper .txt1_wrapper .logo_s {
+  border-right: 2px solid #000;
+  width: 40.5%;
+  background: url(./images/logo_s.png) no-repeat 50% 35% / 70%;
+  text-indent: -9999px;
+}
+main .txt_wrapper p {
+  font-family: 'GT Pressura Mono Regular', helvetica, 'Apple SD Gothic Neo',
+    sans-serif;
+  font-size: 13px;
+}
+main .txt_wrapper h5 {
+  font-family: 'GT Pressura Mono Light', helvetica, 'Apple SD Gothic Neo',
+    sans-serif;
+  font-size: 13px;
+}
+main .txt_wrapper .txt1 .line {
+  text-decoration: underline;
+}
+main .txt_wrapper .txt1 {
+  padding: 45px 30px;
+  letter-spacing: -1px;
+}
+main .txt_wrapper .txt1 .call {
+  margin: 50px auto 15px;
+}
+
+main .txt_wrapper .txt2_wrapper {
+  display: flex;
+  text-align: left;
+}
+main .txt_wrapper .txt2_wrapper .txt2 {
+  width: 64%;
+  border-right: 2px solid #000;
+  padding: 45px 30px;
+  letter-spacing: -1px;
+}
+
+main .txt_wrapper .txt2_wrapper .address {
+  margin: 0 auto 15px;
+}
+main .txt_wrapper .txt2_wrapper .time {
+  margin: 40px auto 15px;
+}
+main .txt2_wrapper .sns a {
+  position: relative;
+  font-family: 'GT Pressura Mono Regular', helvetica, 'Apple SD Gothic Neo',
+    sans-serif;
+  font-size: 13px;
+  padding-right: 20px;
+  background: url(./images/arrow2_b.svg) no-repeat 90% 50% / 10px;
+}
+main .txt2_wrapper .sns_wrapper {
+  margin: 45px 0 0 30px;
+}
+main .txt2_wrapper .sns_wrapper h5 {
+  margin-bottom: 20px;
+}
+main .txt2_wrapper .sns_wrapper li {
+  margin-bottom: 5px;
+}
+
+/***** footer *****/
+
+footer {
+  width: 100%;
+  height: 64px;
+  background: url(./images/bg_footer.svg) no-repeat 50% 70% / cover;
+}
+footer p {
+  font-family: var(--en-font);
+  font-size: 6px;
+  text-align: center;
+  padding-top: 35px;
+}

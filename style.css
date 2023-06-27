@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Pretendard-Regular'; /* 내가 정해준 이름*/
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pretendard-Regular'),
+    url('./common/fonts/Pretendard-Regular.woff2') format('woff2'),
+    url('./common/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold'; /* 내가 정해준 이름.  <- x */
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Pretendard-Bold'),
+    url('./common/fonts/Pretendard-Bold.woff2') format('woff2'),
+    url('./common/fonts/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Black'; /* 내가 정해준 이름.  <- x */
+  font-style: black;
+  font-weight: 900;
+  font-display: swap;
+  src: local('CabinetGrotesk-Black'),
+    url('./common/fonts/CabinetGrotesk-Black.woff2') format('woff2'),
+    url('./common/fonts/CabinetGrotesk-Black.woff') format('woff');
+}
+
+:root {
+  --main-font: 'Pretendard-Regular', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+  --en-font: 'CabinetGrotesk-Black', 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+body {
+  background-color: #e9ebef;
+  color: #14303f;
+  font-family: var(--main-font);
+  /* background: url(./images/bg-grain.png); */
+  font-size: 16px;
+
+  position: relative;
+}
+.texture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url(./images/bg-grain.png);
+  pointer-events: none;
+  z-index: 11111;
+}
+
+/***** header *****/
+
+header {
+  width: 100%;
+  height: 65px;
+  background-color: #e9ebef;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #14303f;
+  font-size: 17px;
+  line-height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  background-image: url(./images/bg-grain.png);
+}
+header p {
+  width: 340px;
+  text-align: center;
+  border-right: 1px solid #14303f;
+}
+header menu {
+  width: 540px;
+  display: flex;
+  justify-content: space-evenly;
+}
+header .btn_img {
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-left: 1px solid #14303f;
+}
+
+/***** main *****/
+
+main .myroom {
+  width: 100%;
+  height: 29.948vw;
+  margin-top: 65px;
+  background-color: #146213;
+  background-image: url(./images/room_wallpattern.svg);
+  background-size: 20%;
+  border-bottom: 2px solid #14303f;
+  overflow: hidden;
+
+  position: relative;
+}
+main #gray {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 10;
+  /* opacity: 0; */
+  /* display: none; */
+}
+main .myroom #floor {
+  position: absolute;
+  width: 100vw;
+  height: 8.385vw;
+  bottom: 0;
+}
+main .myroom #curtain {
+  position: absolute;
+  width: 24.302vw;
+  height: 15.99vw;
+  top: -0.208vw;
+  right: 2.5vw;
+}
+
+main .myroom #art {
+  position: absolute;
+  width: 11.771vw;
+  height: 15.573vw;
+  top: 3.073vw;
+  left: 12.24vw;
+}
+/* main .myroom #art:hover {
+  transform: rotate(5deg) translateX(-8px);
+} */
+
+main .myroom #mirror {
+  position: absolute;
+  width: 7.059vw;
+  height: 12.083vw;
+  top: 4.219vw;
+  left: 25.156vw;
+}
+main .myroom #desk {
+  position: absolute;
+  width: 37.984vw;
+  height: 13.75vw;
+  top: 12.865vw;
+  left: 29.9vw;
+}
+main .myroom #desk_01 {
+  position: absolute;
+  width: 8.49vw;
+  height: 3.495vw;
+  top: 19.704vw;
+  left: 32.213vw;
+  opacity: 0;
+}
+main .myroom #desk_02 {
+  position: absolute;
+  width: 8.177vw;
+  height: 3.182vw;
+  top: 18.177vw;
+  left: 57.577vw;
+  opacity: 0;
+}
+main .myroom #desk_paper {
+  position: absolute;
+  width: 4.818vw;
+  height: 1.67vw;
+  top: 14.844vw;
+  left: 59.635vw;
+  opacity: 0;
+}
+
+main .myroom #sofa {
+  position: absolute;
+  width: 19.948vw;
+  height: 16.444vw;
+  top: 10.417vw;
+  left: 67.969vw;
+}
+main .myroom #sofa_cotton {
+  position: absolute;
+  width: 3.854vw;
+  height: 2.552vw;
+  top: 16.719vw;
+  left: 75.008vw;
+  display: none;
+}
+main .myroom #stand {
+  position: absolute;
+  width: 6.458vw;
+  height: 9.914vw;
+  top: 5.304vw;
+  left: 34.74vw;
+}
+main .myroom #stand_on {
+  position: absolute;
+  width: 6.458vw;
+  height: 9.914vw;
+  top: 5.304vw;
+  left: 34.74vw;
+  display: none;
+}
+main .myroom #stand_light {
+  position: absolute;
+  width: 8.683vw;
+  height: 9.102vw;
+  top: 6.25vw;
+  left: 36.094vw;
+  display: none;
+}
+main .myroom #laptop {
+  position: absolute;
+  width: 10.521vw;
+  height: 6.731vw;
+  top: 9.271vw;
+  left: 44.083vw;
+}
+main .myroom #laptop_error {
+  position: absolute;
+  width: 10.521vw;
+  height: 6.731vw;
+  top: 9.271vw;
+  left: 44.083vw;
+  display: none;
+}
+main .myroom #poster1 {
+  position: absolute;
+  width: 2.917vw;
+  height: 3.594vw;
+  top: 8.069vw;
+  left: 57.096vw;
+}
+main .myroom #poster2 {
+  position: absolute;
+  width: 3.323vw;
+  height: 3.594vw;
+  top: 8.069vw;
+  left: 60.273vw;
+}
+
+main .skill {
+  width: 100%;
+  height: 300px;
+  border-bottom: 2px solid #14303f;
+  text-align: center;
+  font-family: var(--en-font);
+  font-size: 50px;
+  margin-top: 100px;
+}
+main .skill span {
+  display: block;
+}
+
+main .project_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 20.833vw;
+  text-align: center;
+  position: relative;
+}
+
+main .project_wrapper .project {
+  border-right: 1px solid #14303f;
+  border-bottom: 1px solid #14303f;
+  position: relative;
+}
+main .project_wrapper .project p {
+  position: absolute;
+  bottom: 0;
+  background-color: #d7dade;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  line-height: 60px;
+}
+main .project_wrapper .project4 {
+  border-right: none;
+}
+main .project_wrapper .project5 {
+  border-bottom: none;
+}
+main .git_wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: #14303f;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+/****** footer ******/
+
+footer {
+  border-top: 1px solid #14303f;
+  height: 80px;
+  line-height: 80px;
+}
