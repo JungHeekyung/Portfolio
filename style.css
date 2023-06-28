@@ -92,6 +92,13 @@ header .btn_img {
   gap: 10px;
   border-left: 1px solid #14303f;
 }
+header .btn_img img {
+  cursor: pointer;
+}
+/* header img:hover {
+  width: 105%;
+  height: 105%;
+} */
 
 .header_shadow {
   box-shadow: 0 10px 10px #00000052;
