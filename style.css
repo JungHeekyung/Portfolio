@@ -93,6 +93,9 @@ header .btn_img {
   border-left: 1px solid #14303f;
 }
 
+.header_shadow {
+  box-shadow: 0 10px 10px #00000052;
+}
 /***** main *****/
 
 main .myroom {
@@ -265,7 +268,7 @@ main .project_wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 20.833vw;
+  grid-auto-rows: 22.833vw;
   text-align: center;
   position: relative;
 }
@@ -284,25 +287,39 @@ main .project_wrapper .project p {
   margin: 0;
   line-height: 60px;
 }
+main .project_wrapper .project1 {
+  background: url(./images/project_happyrun.svg) no-repeat 50% 35% / 40%;
+}
+main .project_wrapper .project2 {
+  background: url(./images/project_mrmen.svg) no-repeat 50% 35% / 50%;
+}
 main .project_wrapper .project4 {
   border-right: none;
 }
 main .project_wrapper .project5 {
   border-bottom: none;
 }
-main .git_wrapper {
-  width: 50px;
-  height: 50px;
-  background-color: #14303f;
+main .bottom_wrapper {
   position: absolute;
   bottom: 0;
-  right: 30px;
+  right: 20px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
 }
-
+main .bottom_wrapper p::after {
+  width: 10px;
+  height: 10px;
+  background: url(./images/bottom_arrow.svg);
+}
 /****** footer ******/
 
 footer {
   border-top: 1px solid #14303f;
   height: 80px;
   line-height: 80px;
+}
+footer p {
+  margin-left: 30px;
+  font-weight: 700;
 }
