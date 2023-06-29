@@ -95,11 +95,20 @@ header .btn_img {
 header .btn_img img {
   cursor: pointer;
 }
-/* header img:hover {
-  width: 105%;
-  height: 105%;
-} */
+header .btn_img img:nth-child(1) {
+  animation: moving 1s infinite ease-in-out;
+}
 
+@keyframes moving {
+  0%,
+  100% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0px) rotate(5deg);
+  }
+}
 .header_shadow {
   box-shadow: 0 10px 10px #00000052;
 }

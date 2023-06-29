@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Pretendard-Regular'; /* 내가 정해준 이름*/
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pretendard-Regular'),
+    url('../common/fonts/Pretendard-Regular.woff2') format('woff2'),
+    url('../common/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Bold'; /* 내가 정해준 이름.  <- x */
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Pretendard-Bold'),
+    url('../common/fonts/Pretendard-Bold.woff2') format('woff2'),
+    url('../common/fonts/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Black'; /* 내가 정해준 이름.  <- x */
+  font-style: black;
+  font-weight: 900;
+  font-display: swap;
+  src: local('CabinetGrotesk-Black'),
+    url('../common/fonts/CabinetGrotesk-Black.woff2') format('woff2'),
+    url('../common/fonts/CabinetGrotesk-Black.woff') format('woff');
+}
+
+:root {
+  --main-font: 'Pretendard-Regular', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+  --en-font: 'CabinetGrotesk-Black', 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+
+body {
+  background-color: #e9ebef;
+  color: #14303f;
+  font-family: var(--main-font);
+  /* background: url(./images/bg-grain.png); */
+  font-size: 16px;
+
+  position: relative;
+}
+.texture {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url(./images/bg-grain.png);
+  pointer-events: none;
+  z-index: 11111;
+}
+
+/***** header *****/
+
+header {
+  width: 100%;
+  height: 65px;
+  background-color: #e9ebef;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #14303f;
+  font-size: 17px;
+  line-height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  background-image: url(./images/bg-grain.png);
+}
+header p {
+  width: 340px;
+  text-align: center;
+  border-right: 1px solid #14303f;
+}
+header menu {
+  width: 540px;
+  display: flex;
+  justify-content: space-evenly;
+}
+header .btn_img {
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-left: 1px solid #14303f;
+}
+header .btn_img img {
+  cursor: pointer;
+}
+header .btn_img img:nth-child(1) {
+  animation: moving 1s infinite ease-in-out;
+}
+
+@keyframes moving {
+  0%,
+  100% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(0px) rotate(5deg);
+  }
+}
+
+.header_shadow {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/***** main *****/
+main .title {
+  width: 100%;
+  height: 175px;
+  margin-top: 65px;
+  text-align: center;
+  line-height: 175px;
+  font-size: 50px;
+  font-family: var(--en-font);
+  border-bottom: 1px solid #14303f;
+}
+main .illust {
+  width: 100%;
+  height: 420px;
+  text-align: center;
+  line-height: 420px;
+  font-size: 3rem;
+  border-bottom: 1px solid #14303f;
+
+  color: #14303f73;
+}
+
+main .txt_wrapper {
+  width: 100%;
+  height: 1180px;
+  display: flex;
+}
+main .txt_wrapper .career {
+  width: 50%;
+}
+main .txt_wrapper .tools_wrapper {
+  width: 50%;
+  border-left: 1px solid #14303f;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-template-rows: auto;
+  padding: 150px 50px;
+  gap: 20px;
+}
+main .txt_wrapper .tools {
+  margin: 0 auto;
+}
+main .txt_wrapper .tools img {
+  margin: 0 5px;
+}
+main .txt_wrapper h2 {
+  font-family: var(--en-font);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+main .txt_wrapper .toolstxt {
+  font-size: 18px;
+}
+/****** footer ******/
+
+footer {
+  border-top: 1px solid #14303f;
+  height: 80px;
+  line-height: 80px;
+}
+footer p {
+  margin-left: 30px;
+  font-weight: 700;
+}
