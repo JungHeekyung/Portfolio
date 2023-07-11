@@ -37,13 +37,15 @@
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
-
+html {
+  font-size: 10px;
+}
 body {
   background-color: #e9ebef;
   color: #14303f;
   font-family: var(--main-font);
   /* background: url(./images/bg-grain.png); */
-  font-size: 16px;
+  font-size: 1.6rem;
 
   position: relative;
 }
@@ -68,7 +70,7 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #14303f;
-  font-size: 17px;
+  font-size: 1.7rem;
   line-height: 65px;
   position: fixed;
   top: 0;
@@ -273,7 +275,7 @@ main .skill {
   border-bottom: 2px solid #14303f;
   text-align: center;
   font-family: var(--en-font);
-  font-size: 50px;
+  font-size: 5rem;
   margin-top: 100px;
 }
 main .skill span {
@@ -304,10 +306,13 @@ main .project_wrapper .project p {
   line-height: 60px;
 }
 main .project_wrapper .project1 {
-  background: url(./images/project_happyrun.svg) no-repeat 50% 35% / 40%;
+  background: url(./images/project01_happyrun.svg) no-repeat 50% 35% / 40%;
 }
 main .project_wrapper .project2 {
-  background: url(./images/project_mrmen.svg) no-repeat 50% 35% / 50%;
+  background: url(./images/project02_mrmen.svg) no-repeat 50% 35% / 50%;
+}
+main .project_wrapper .project3 {
+  background: url(./images/project03_mintpaper.svg) no-repeat 50% 40% / 60%;
 }
 main .project_wrapper .project4 {
   border-right: none;
