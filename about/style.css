@@ -1,6 +1,15 @@
 @charset "utf-8";
 
 @font-face {
+  font-family: 'Pretendard-Light'; /* 내가 정해준 이름*/
+  font-weight: 200;
+  font-display: swap;
+  src: local('Pretendard-Light'),
+    url('../common/fonts/Pretendard-Light.woff2') format('woff2'),
+    url('../common/fonts/CabinetGrotesk-Light.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Pretendard-Regular'; /* 내가 정해준 이름*/
   font-style: normal;
   font-weight: 400;
@@ -21,6 +30,15 @@
 }
 
 @font-face {
+  font-family: 'Pretendard-ExtraBold'; /* 내가 정해준 이름.  <- x */
+  font-weight: 800;
+  font-display: swap;
+  src: local('Pretendard-ExtraBold'),
+    url('../common/fonts/Pretendard-ExtraBold.woff2') format('woff2'),
+    url('../common/fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
   font-family: 'CabinetGrotesk-Black'; /* 내가 정해준 이름.  <- x */
   font-style: black;
   font-weight: 900;
@@ -33,6 +51,13 @@
 :root {
   --main-font: 'Pretendard-Regular', -apple-system, BlinkMacSystemFont,
     'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+
+  --main-font-light: 'Pretendard-Light', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+
+  --main-font-ExtraBold: 'Pretendard-ExtraBold', -apple-system, BlinkMacSystemFont,
+    'Malgun Gothic', '맑은 고딕', helvetica, 'Apple SD Gothic Neo', sans-serif;
+
   --en-font: 'CabinetGrotesk-Black', 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
@@ -134,40 +159,95 @@ main .illust {
   line-height: 420px;
   font-size: 3rem;
   border-bottom: 1px solid #14303f;
+  overflow: hidden;
 
-  color: #14303f73;
+  position: relative;
+}
+main .title.active {
+  background-color: #A4EEEE;
+}
+main .illust.active {
+  background: url(./images/about_bg01.svg)-5%;
 }
 
-main .txt_wrapper {
+
+main .illust img {
+ transform: translatey(10%);
+}
+main .illust .na_01 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .illust .na_02 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+main .txt-tools {
   width: 100%;
-  height: 1180px;
-  display: flex;
+  /* height: 1180px; */
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: 0.7fr 2fr;
+  grid-auto-columns: max-content;
+  /* align-items: center; */
 }
-main .txt_wrapper .career {
-  width: 50%;
+main .txt-tools .hello {
+  padding: 90px 50px 0 170px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #14303f;
 }
-main .txt_wrapper .tools_wrapper {
-  width: 50%;
+main .txt-tools .hello span {
+  display: block;
+}
+main .txt-tools .career {
+  font-size: 1.8rem;
+  padding: 60px 50px 0 170px;
+  grid-row: 2 / 3;
+}
+
+main .txt-tools .career p {
+  font-family: var(--main-font-light);
+  margin-top: 30px;
+  font-weight: 200;
+  letter-spacing: -0.2px;
+  line-height: 3rem;
+}
+main .txt-tools .career span {
+  font-family: var(--main-font-ExtraBold);
+  font-weight: 800;
+  margin: 2px 0;
+  display: block;
+}
+main .tools_wrapper {
+  width: 100%;
   border-left: 1px solid #14303f;
   display: grid;
   grid-template-columns: 4fr 6fr;
-  grid-template-rows: auto;
+  grid-template-rows: 250px 250px 230px 150px;
   padding: 150px 50px;
   gap: 20px;
+  grid-row: 1 / span 3;
 }
-main .txt_wrapper .tools {
+main .tools_wrapper .tools {
   margin: 0 auto;
 }
-main .txt_wrapper .tools img {
+main .tools_wrapper .tools img {
   margin: 0 5px;
 }
-main .txt_wrapper h2 {
+main .tools_wrapper h2 {
   font-family: var(--en-font);
   font-size: 25px;
   margin-bottom: 15px;
 }
-main .txt_wrapper .toolstxt {
-  font-size: 18px;
+main .tools_wrapper .toolstxt {
+  font-size: 1.8rem;
   line-height: 28px;
 }
 /****** footer ******/
