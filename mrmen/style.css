@@ -79,7 +79,7 @@ h4 {
 /***** header *****/
 header {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 header .top {
   width: 93.3333%;

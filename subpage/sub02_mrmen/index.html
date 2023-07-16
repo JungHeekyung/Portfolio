@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+
+    <!-- og -->
+
+    <meta property="og:title" content="퍼블리셔의 방">
+    <meta property="og:description" content="정희경의 웹 포트폴리오 페이지입니다">
+    <meta property="og:image" content="https://jungheekyung.github.io/Portfolio/images/openGraph.png">
+    <meta property="og:url" content="https://jungheekyung.github.io/Portfolio/index">
+    <!-- 
+    favicon.ico
+    가장 기본적인 파비콘 파일로 16x16 크기를 가짐
+    일반적으로 파비콘 파일은 root 디렉토리 바로 아래 index.html 문서와 같은 위치에 둠
+   -->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../common/style/reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../common/jquery-3.7.0.min.js"></script>
+    <script defer src="./script.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <p><a href="https://jungheekyung.github.io/Portfolio">Jung Heekyung</a></p>
+        <menu>
+            <li><a href="#">About</a></li>
+            <li><a href="https://jungheekyung.github.io/Portfolio#project_wrapper">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </menu>
+        <div class="btn_img">
+            <img id="potion" src="./images/menu01.svg" alt="potion img">
+            <img id="clock" src="./images/menu02.svg" alt="clock img">
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="title">Mr.men Little Miss</div>
+        <div class="content_wrapper">
+        <div class="content_blank"><p>blank</p></div>
+        <div class="content">
+            <p class="content_title">미디어 쿼리를 활용한 반응형 웹 디자인
+                <span>2023.06.00 - 06.00</span>
+            </p>
+            <div class="img_wrapper">
+            <img src="./images/main01_pc.png" alt="img_pc" class="mrmen_pc">
+            <img src="./images/main02_tablet.png" alt="img_tablet" class="mrmen_tablet">
+            <img src="./images/main03_mobile.png" alt="img_mobile" class="mrmen_mobile">
+            </div>
+            <article class="overview">
+                <h3>OVERVIEW</h3>
+                <p>
+                    Mr.Men Little Miss라는 애니메이션 소개 페이지.<br>
+                    1971년에 처음으로 발행 된 그림책으로 추억과 동심을 느낄 수 있도록 리디자인.<br>
+                    미디어 쿼리를 이용한 반응형 웹으로 제작.<br>
+                </p>
+            </article>
+            <div class="style">
+                <div class="style_01">
+                    <h3>FONT</h3>
+                    <img src="./images/style01_font.svg" alt="font">
+                </div>
+                <div class="style_02">
+                    <h3>COLOR</h3>
+                    <img src="./images/style02_color.svg" alt="color">
+                    <p>#귀여운 #생동감있는 #레트로</p>
+                </div>
+            </div>
+            <div class="elements">
+                <h3>ELEMENTS</h3>
+                <img src="./images/elements_01.svg" alt="elements1" class="elements_01">
+                <img src="./images/elements_02.svg" alt="elements2" class="elements_02">
+                <img src="./images/elements_03.svg" alt="elements3" class="elements_03">
+            </div>
+            <div class="skill">
+                <h3>사용 기술</h3>
+                <p>tablet min-width:768px
+                    PC min-width:1200px
+                    flex, position</p>
+            </div>
+        </div>
+        </div>
+            
+
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>kerryjhk@gmail.com</p>
+    </footer>
+    <div class="texture"></div>
+</body>
+
+</html>
