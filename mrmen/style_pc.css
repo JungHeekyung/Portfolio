@@ -52,6 +52,9 @@ main {
 main .character_wrapper {
   position: relative;
 }
+main .character_wrapper li {
+  margin: 0 auto;
+}
 main .character_wrapper .video {
   margin-top: 300px;
   width: 81.3%;

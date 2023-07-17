@@ -177,6 +177,7 @@ main {
   min-width: 350px;
   background: url(./images/bg_cloud1.svg) no-repeat 50% 2.3% / 108%;
   /* background-color: #fff; */
+    overflow: hidden;
 }
 main .character_wrapper {
   width: 100%;
@@ -227,30 +228,22 @@ main .character_img {
   background-color: #fff;
   padding-top: 65px;
   display: flex;
-  overflow: hidden;
+}
+main .character_img ul {
+  background-color: #fff;
 }
 main .character_img li {
-  width: 100%;
   min-width: 100px;
 }
-main .character_img li div {
+main .character_img li img {
   text-indent: -9999px;
-  width: 100%;
+  width: 95%;
   max-width: 300px;
   aspect-ratio: 1;
+  margin: 10px;
 }
-main .character_img li:nth-child(2) div {
-  background: url(./images/character_03.svg) no-repeat 50% 50% / 80%;
-}
-main .character_img li:nth-child(3) div {
-  background: url(./images/character_04.svg) no-repeat 50% 50% / 112%;
-}
-main .character_img li:nth-child(4) div {
-  background: url(./images/character_05.svg) no-repeat 50% 50% / 85%;
-}
-
-main .character_img .m_none {
-  display: none;
+main .character_img li:nth-child(12) img {
+  width: 50%;
 }
 
 main .btn_wrapper {

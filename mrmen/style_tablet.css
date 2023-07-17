@@ -64,19 +64,6 @@ main .en {
   margin-bottom: 25px;
 }
 
-main .character_img .m_none {
-  display: block;
-}
-main .character_img .pc_none {
-  display: none;
-}
-
-main .character_img li:nth-child(1) div {
-  background: url(./images/character_01.svg) no-repeat 50% 50% / 80%;
-}
-main .character_img li:nth-child(5) div {
-  background: url(./images/character_02.svg) no-repeat 50% 50% / 80%;
-}
 
 h4 {
   font-size: 16px;
