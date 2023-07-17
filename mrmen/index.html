@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <title>mr.men little miss</title>
 
     <!-- og -->
@@ -21,7 +22,9 @@
     <link rel="shortcut icon" href="./mr-messy.ico" type="image/x-icon">
 
 
-    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/style/reset.css">
+    <link rel="stylesheet" href="../common/swiper-bundle.min.css">
+    
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style_tablet.css" media="(min-width:768px)">
     <link rel="stylesheet" href="./style_pc.css" media="(min-width:1200px)">
@@ -83,37 +86,38 @@
             <p class="title"><span>Ⅰ.</span>CHARACTERS</p>
             <p class="ko">당신은<span class="block"><span class="bold">어떤 캐릭터</span>인가요?</span></p>
             <p class="en">WHICH<span class="block"> CHARACTER</span><span class="block"> ARE YOU?</span></p>
-
-            <ul class="character_img mySwiper">
-                <li class="m_none">
+            <div class="mySwiper">
+            <ul class="character_img swiper-wrapper swiper-img-wrapper">
+                <li class="m_none swiper-slide slide-posi slide-img1">
                     <div>수다양 img</div>
                     <h4>수다양</h4>
                 </li>
-                <li>
+                <li class="swiper-slide slide-posi slide-img2">
                     <div>꽈당씨 img</div>
                     <h4>꽈당씨</h4>
                 </li>
-                <li>
+                <li class="swiper-slide slide-posi slide-img3">
                     <div>간지럼씨 img</div>
                     <h4>간지럼씨</h4>
                 </li>
-                <li>
+                <li class="swiper-slide slide-posi slide-img4">
                     <div>햇살양 img</div>
                     <h4>햇살양</h4>
                 </li>
-                <li class="m_none">
+                <li class="m_none swiper-slide slide-posi slide-img5">
                     <div>먼지씨 img</div>
                     <h4>먼지씨</h4>
                 </li>
-                <li class="pc_none m_none">
+                <li class="pc_none m_none swiper-slide slide-posi slide-img6">
                     <div>투덜씨 img</div>
                     <h4>투덜씨</h4>
                 </li>
-                <li class="pc_none m_none">
+                <li class="pc_none m_none swiper-slide slide-posi slide-img7">
                     <div>어머나양 img</div>
                     <h4>어머나양</h4>
                 </li>
             </ul>
+        </div>
             <div class="btn_wrapper">
                 <div class="btn1"><a href="#">VIEW ALL CHARACTERS</a></div>
             </div>
@@ -216,7 +220,7 @@
         /* window.addEventListener('DOMContentLoaded', function() {
         //실행 코드
         }); */
-        var item = document.querySelectorAll('.item');
+       /*  var item = document.querySelectorAll('.item');
         var cnt = 0;
 
         function activeFunc () {
@@ -228,13 +232,8 @@
         }
         var addActive = setInterval(activeFunc, 200);
 
+ */
 
-
-
-
-        </script>
-
-        <script>
 
 
             var item = document.querySelectorAll('.item');
