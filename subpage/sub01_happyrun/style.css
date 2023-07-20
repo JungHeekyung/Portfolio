@@ -196,18 +196,22 @@ main .content_wrapper .content .content_title {
   width: 100%;
   height: 14.802vw;
   border-bottom: var(--border-style);
-  font-weight: 700;
+  font-family: var(--main-font-ExtraBold);
   font-size: 2.5rem;
   padding: 4.323vw 0  2.083vw 41.198vw;
 }
 main .content_wrapper .content .content_title span {
   display: block;
   font-size: 1.8rem;
-  font-weight: 400;
+ font-family: var(--main-font);
+}
+main .content_wrapper .content .content_title strong {
+  margin-right: 10px;
 }
 main .content_wrapper .content .content_title .sub_title {
-  font-weight: 700;
+  font-family: var(--main-font-ExtraBold);
   margin-bottom: 0.677vw;
+  letter-spacing: -0.5px;
 }
 main .content_wrapper .content .content_title .team {
   margin-top: 1.563vw;
@@ -286,7 +290,7 @@ main .content .skill .skill_title span {
 }
 main .content .skill .txt_small {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-family: var(--main-font);
   margin-top: 0.104vw;
 }
 
@@ -343,18 +347,18 @@ main .content .before .txtbox_02 {
 main .content .before .dash01 {
   position: absolute;
 
-  width: 49.688vw;
+  width: 63.688vw;
   height: 2.552vw;
-  top: 0;
-  left: 0;
+  top: 0.2vw;
+  left: 5vw;
 }
 main .content .before .dash02 {
   position: absolute;
 
   width: 18.490vw;
   height: 7.552vw;
-  top: 0;
-  left: 0;
+  top: 4vw;
+  left: 36vw;
 }
 
 
@@ -550,7 +554,7 @@ main .content .swot .asis_tobe img {
 }
 
 main .content .ux_vision {
-  height: 14.063vw;
+  height: 12.163vw;
   border-bottom: var(--border-style);
   padding-left: 7.813vw;
   margin-top: 5.521vw;
@@ -572,39 +576,281 @@ main .content .ux_vision p span {
   letter-spacing: -0.5px;
 }
 
-
-
-
-
-/* main .content_wrapper .problem {
+main .content .diagram {
   padding-left: 7.813vw;
-  margin-bottom: 300px;
+  margin-top: 5.521vw;
+  border-bottom: var(--border-style);
+  height: 31.646vw;
+}
+main .content .diagram .diagram_title {
+  display: flex;
+}
+main .content .diagram .diagram_title h3 {
+  font-family: var(--main-font-ExtraBold);
+  font-size: 2.5rem;
+}
+main .content .diagram .diagram_title h3:nth-child(3) {
+  width: 20.677vw;
+}
+main .content .diagram .diagram_title p {
+  font-size: 1.8rem;
+  padding-left: 5.546vw;
+}
+main .content .diagram .diagram_wrapper {
+  margin-top: 4.427vw;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 64.063vw;
+  display: flex;
+  justify-content: space-between;
+}
+main .content .diagram .diagram_subtitle {
+  width: 19.115vw;
+  height: 2.448vw;
+  background-color: #14303f;
+  color: #fff;
+  line-height: 2.448vw;
+}
+main .content .diagram .diagram_1-1,
+main .content .diagram .diagram_2-1,
+main .content .diagram .diagram_2-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.250vw;
+}
+main .content .diagram .diagram_1-1 h4,
+main .content .diagram .diagram_2-1 h4,
+main .content .diagram .diagram_2-2 h4,
+main .content .diagram .diagram_3-1 h4, 
+main .content .diagram .diagram_3-2 h4, 
+main .content .diagram .diagram_3-3 h4 {
+  width: 4.479vw;
+  height: 2.448vw;
+  border: var(--border-style-light);
+  background-color: #fff;
+  font-weight: 700;
+  line-height: 2.448vw;
+}
+main .content .diagram .diagram_1-2,
+main .content .diagram .diagram_2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1.250vw;
+  line-height: 2.448vw;
+  gap: 0.469vw;
+}
+main .content .diagram .diagram_1-2 p,
+main .content .diagram .diagram_2-3 p {
+  background-color: #fff;
+}
+main .content .diagram .diagram_3_wrapper {
+  margin-top: 1.250vw;
+  display: flex;
+  justify-content: space-between;
+}
+main .content .diagram .diagram_3-3_wrapper {
+  display: flex;
+  gap: 0.208vw;
+}
+main .content .diagram .diagram_3-3 h4 {
+  margin: 0 auto;
+}
+main .content .diagram .diagram_3-3_wrapper h4 {
+  margin-top: 0.521vw;
+}
+main .content .diagram .diagram_3 p {
+  width: 4.479vw;
+  height: 2.448vw;
+  background-color: #fff;
+  line-height: 2.448vw;
+  margin-top: 0.521vw;
+}
+
+main .content .style {
+  height: 45.573vw;
+  padding-left: 7.813vw;
+}
+
+main .content .style_wrapper {
+  width: 64.063vw;
+  height: 31.573vw;
+  display: flex;
+  justify-content: space-between;
+}
+main .content .style h3 {
+  font-size: 2.5rem;
+  margin: 5.781vw 0 30px; 
+}
+main .content .style_font,
+main .content .style_color {
+  position: relative;
+}
+main .content .style_font img {
+  width: 25.678vw;
+  height: 10.429vw;
+}
+main .content .style_color img {
+  width: 29.219vw;
+  height: 5.938vw;
+}
+main .content .style .style_color h4 {
+  font-family: var(--main-font-ExtraBold);
+  font-size: 2.5rem;
+  word-spacing: 1.719vw;
+  position: absolute;
+  right: 0;
+  margin-top: 3vw;
+}
+main .content .style .style_font .font_txtwrapper,
+main .content .style .style_color p {
+  width: 100%;
+  height: 8.490vw;
+  border: var(--border-style-light);
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1.2vw;
+}
+main .content .style .style_font .font_txtwrapper p:nth-child(2) {
+  padding-top: 0.6vw;
+}
+main .content .style .style_color p {
+  padding-top: 2.1vw;
+}
+
+
+main .content .prototype {
+  width: 100%;
+
+  position: relative;
+}
+main .content .prototype h3 {
+  font-family: var(--main-font-ExtraBold);
+  font-size: 2.5rem;
+  padding-left: 7.813vw;
+}
+main .content .prototype .prototype_wrapper1 {
+  width: 64.063vw;
+  margin-top: 3.588vw;
+  margin-left: 7.813vw;
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+main .content .prototype .prototype_wrapper1 img {
+  width: 14.292vw;
+  height: 29.375vw;
+}
+main .content .prototype .prototype_wrapper1 h4 {
+  font-family: var(--main-font-ExtraBold);
+  text-align: center;
+  margin-top: 1.1vw;
+}
+main .content .prototype .line_1,
+main .content .prototype .line_2 {
+  text-indent: -9999px;
+  width: 100%;
+  border-top: var(--border-style);
+  position: relative;
+  top: 11.927vw;
+}
+main .content .prototype .line_2 {
+  top: 29.527vw;
+}
+main .content .prototype .prototype_wrapper2 {
+  width: 58.490vw;
+  height: 38.385vw;
+  margin-top: 13.906vw;
+  margin-left: 7.813vw;
+
+  display: flex;
+  position: relative;
+}
+main .content .prototype .prototype_wrapper2 h4 {
+  font-family: var(--main-font-ExtraBold);
+  font-size: 1.8rem;
+  position: absolute;
+  top: 12.396vw;
+}
+main .content .prototype .prototype_wrapper2 .prototype_05 {
+  width: 19.242vw;
+  height: 29.381vw;
+  margin-right: 2.760vw;
+  position: absolute;
+  bottom: 0;
+  left: 4.323vw;
+}
+main .content .prototype .prototype_wrapper2 .prototype_06 {
+  width: 15.521vw;
+  height: 38.385vw;
+  margin-right: 2.344vw;
+  position: absolute;
+  bottom: 0;
+  left: 26.354vw;
+}
+main .content .prototype .prototype_wrapper2 .prototype_07 {
+  width: 14.294vw;
+  height: 29.381vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main .content .prototype .prototype_wrapper3 {
+  width: 49.167vw;
+  margin-top: 16.198vw;
+  margin-left: 17.135vw;
+  margin-bottom: 10.625vw;
+  display: flex;
+  justify-content: space-between;
+}
+main .content .prototype .prototype_wrapper3 img {
+  width: 14.292vw;
+  height: 29.375vw;
+}
+main .content .prototype .prototype_wrapper3 h4 {
+  font-family: var(--main-font-ExtraBold);
+  text-align: center;
+  margin-top: 1.1vw;
+}
+
+
+
+
+main .content_wrapper .problem {
+  padding-left: 7.813vw;
+  margin-bottom: 10.625vw;
+  padding-top: 5vw;
+  border-top: var(--border-style);
 }
 main .content_wrapper .problem .problem_title {
+  font-family: var(--main-font-ExtraBold);
   font-size: 2.5rem;
-  font-weight: 700;
-  margin-top: 100px;
+  margin-top: 5.208vw;
 }
 main .content_wrapper .problem .problem_description {
   font-size: 1.8rem;
-  margin-bottom: 70px;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
 }
 main .content_wrapper .problem .problem_description span {
   display: block;
-  font-weight: 700;
-  margin: 70px 0 20px;
+  font-family: var(--main-font-ExtraBold);
+  margin: 2.646vw 0 0.6vw;
 }
-main .content_wrapper .bottom_btn {
+
+/* main .content_wrapper .bottom_btn {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 0.677vw;
 
   position: absolute;
-  bottom: 20px;
-  right: 50px;
-}
-main .content_wrapper .bottom_btn .arrow {
+  bottom: 1.042vw;
+  right: 2.604vw;
+} */
+/* main .content_wrapper .bottom_btn .arrow {
   width: 29px;
   height: 9px;
 }
