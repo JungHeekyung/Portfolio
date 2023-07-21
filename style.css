@@ -315,11 +315,17 @@ main .project_wrapper .project p {
   margin: 0;
   line-height: 60px;
 }
-main .project_wrapper .project a:hover {
+main .project_wrapper .project p a:hover {
   border-bottom: 1px solid #14303f;
 }
-main .project_wrapper .project1 {
+/* main .project_wrapper .project1 {
   background: url(./images/project01_happyrun.svg) no-repeat 50% 35% / 40%;
+} */
+main .project_wrapper .project1 img {
+  width: 9.844vw;
+  height: 9.844vw;
+  transform: translateY(50%);
+  cursor: default;
 }
 main .project_wrapper .project2 {
   background: url(./images/project02_mrmen.svg) no-repeat 50% 35% / 50%;
