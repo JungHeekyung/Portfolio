@@ -327,11 +327,17 @@ main .project_wrapper .project1 img {
   transform: translateY(50%);
   cursor: default;
 }
-main .project_wrapper .project2 {
-  background: url(./images/project02_mrmen.svg) no-repeat 50% 35% / 50%;
+main .project_wrapper .project2 img {
+  width: 12.073vw;
+  height: 10.094vw;
+  transform: translateY(50%);
+  cursor: default;
 }
-main .project_wrapper .project3 {
-  background: url(./images/project03_mintpaper.svg) no-repeat 50% 40% / 60%;
+main .project_wrapper .project3 img {
+  width: 14.955vw;
+  height: 10.374vw;
+  transform: translateY(50%);
+  cursor: default;
 }
 main .project_wrapper .project4 {
   border-right: none;
