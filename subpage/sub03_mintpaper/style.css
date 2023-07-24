@@ -590,7 +590,7 @@ main .content_wrapper .problem .problem_title {
 }
 main .content_wrapper .problem .problem_description {
   font-size: 1.8rem;
-  line-height: 2.7rem;
+  line-height: 3rem;
   margin-top: 2vw;
 }
 main .content_wrapper .problem .problem_description .primary {
