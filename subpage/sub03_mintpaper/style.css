@@ -469,9 +469,10 @@ main .content .script .script_04 .script_04_img {
 main .content .script .script_04 img:nth-child(1) {
   width: 18.203vw;
   height: 9.699vw;
+  margin-top: 3.55vw;
 }
 main .content .script .script_04 img:nth-child(2) {
-  margin-left: -2vw;
+  margin-left: 1.9444vw;
   width: 58.330vw;
   height: 16.395vw;
 }
@@ -559,9 +560,8 @@ main .content .illustration p {
 
 main .content_wrapper .problem {
   padding-left: 7.813vw;
-  margin-bottom: 10.625vw;
+  margin-bottom: 19.625vw;
   padding-top: 5vw;
-  border-top: var(--border-style);
 }
 main .content_wrapper .problem .problem_title {
   font-family: var(--main-font-ExtraBold);
@@ -571,6 +571,7 @@ main .content_wrapper .problem .problem_title {
 main .content_wrapper .problem .problem_description {
   font-size: 1.8rem;
   line-height: 2.7rem;
+  margin-top: 2vw;
 }
 main .content_wrapper .problem .problem_description span {
   display: block;
@@ -578,22 +579,26 @@ main .content_wrapper .problem .problem_description span {
   margin: 2.646vw 0 0.6vw;
 }
 
-/* main .content_wrapper .bottom_btn {
+main .content_wrapper .bottom_btn {
   display: flex;
   align-items: center;
-  gap: 0.677vw;
+  gap: 1.177vw;
 
   position: absolute;
-  bottom: 1.042vw;
-  right: 2.604vw;
-} */
-/* main .content_wrapper .bottom_btn .arrow {
+  bottom: 2.042vw;
+  right: 5.604vw;
+}
+main .content_wrapper .bottom_btn .arrow {
   width: 29px;
   height: 9px;
 }
+main .content_wrapper .bottom_btn img {
+  width: 13.876vw;
+  height: 9.626vw;
+}
 main .content_wrapper .bottom_btn img:hover {
   transform: scale(1.05);
-} */
+}
 /****** footer ******/
 
 footer {
@@ -602,6 +607,7 @@ footer {
   line-height: 80px;
 }
 footer p {
+  font-size: 16px;
   margin-left: 30px;
   font-weight: 700;
 }
