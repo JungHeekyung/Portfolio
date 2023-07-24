@@ -346,12 +346,24 @@ main .content_wrapper .problem .problem_title {
 main .content_wrapper .problem .problem_description {
   font-size: 1.8rem;
   margin-bottom: 70px;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
 }
-main .content_wrapper .problem .problem_description span {
+main .content_wrapper .problem .problem_description .primary {
   font-family: var(--main-font-ExtraBold);
   display: block;
-  margin: 70px 0 20px;
+  margin: 100px 0 20px;
+}
+/* main .content_wrapper .problem .problem_description .primary {
+  display: block;
+  font-family: var(--main-font-ExtraBold);
+  font-size: 2rem;
+  margin: 2.646vw 0 0.6vw;
+} */
+main .content_wrapper .problem .problem_description .emph {
+  background: linear-gradient(to top,#fff 50%, transparent 50%);
+  color: #14303f;
+  font-weight: bold;
+  /* font-family: var(--main-font-ExtraBold); */
 }
 main .content_wrapper .bottom_btn {
   display: flex;
