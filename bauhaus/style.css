@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 'Mulish' */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,700;1,200&display=swap');
+
+@font-face {
+  font-family: 'Pretendard'; /* 내가 정해준 이름*/
+  font-style: thin;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Pretendard-ExtraLight'),
+    url('../common/fonts/Pretendard-ExtraLight.woff2') format('woff2'),
+    url('../common/fonts/Pretendard-ExtraLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard'; /* 내가 정해준 이름*/
+  font-style: thin;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Pretendard-Light'),
+    url('../common/fonts/Pretendard-Light.woff2') format('woff2'),
+    url('../common/fonts/CabinetGrotesk-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard'; /* 내가 정해준 이름*/
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pretendard-Regular'),
+    url('./common/fonts/Pretendard-Regular.woff2') format('woff2'),
+    url('./common/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+
+/****** header ******/
+
+
+
+
