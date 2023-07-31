@@ -16,13 +16,13 @@
    <meta property="og:image" content="https://team-oozz.github.io/team-oozz/images/og-img.jpg">
    <meta property="og:url" content="https://team-oozz.github.io/team-oozz">
     -->
-    <!-- font -->
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
- 
+
 <link rel="stylesheet" href="../common/style/reset.css">
 <link rel="stylesheet" href="./style.css">
+
+  <!-- jQuery 문서연결 -->
+  <script src="../common/jquery-3.7.0.min.js"></script>
+  <script defer src="./script.js"></script>
 </head>
 <body>
   <header>
@@ -135,20 +135,117 @@
 
       <div class="history">
         <h2 class="title">History</h2>
-        <div class="history_1">
-          <p>Weimar</p>
-          <img src="./images/history_pic01.png" alt="weimar">
-          <img src="./images/history_polygon01.svg" alt="polygon">
-        
+
+          <div class="history_1">
+            <img class="h_pic01" src="./images/history_pic01.png" alt="weimar">
+            <img class="h_polygon01" src="./images/history_polygon01.svg" alt="polygon">
+            <p class="sub_title">Weimar</p>
+            
+          <div class="history_link">
+            <p><span>Weimar</span>
+              바이마르<br>
+              1919 - 1925
+            </p>
+            <a href="#">MORE DETAIL<img src="./images/history_arrow.svg" alt="arrow"></a>
+          </div>
+        </div>
+
+        <div class="history_2">
+          <img class="h_pic02" src="./images/history_pic02.png" alt="Dessau">
+          <img class="h_polygon02" src="./images/history_polygon02.svg" alt="polygon">
+          <img class="h_polygon03" src="./images/history_polygon03.svg" alt="polygon">
+          <p class="sub_title">Dessau</p>
+          
         <div class="history_link">
-          <p><span>Weimar</span>
-            바이마르<br>
-            1919 - 1925
+          <p><span>Dessau</span>
+            데사우<br>
+            1915 - 1932
           </p>
-          <a href="#"><p>MORE DETAIL</p><img src="./images/bottom_arrow.svg" alt="arrow"></a>
+          <a href="#">MORE DETAIL<img src="./images/history_arrow.svg" alt="arrow"></a>
         </div>
       </div>
+
+      <div class="history_3">
+        <img class="h_polygon04" src="./images/history_polygon04.svg" alt="polygon">
+        <img class="h_pic03" src="./images/history_pic03.png" alt="Berlin">
+        <p class="sub_title">Berlin</p>
+        
+      <div class="history_link">
+        <p><span>Berlin</span>
+          베를린<br>
+          1932 - 1933
+        </p>
+        <a href="#">MORE DETAIL<img src="./images/history_arrow.svg" alt="arrow"></a>
+      </div>
     </div>
+    </div>
+
+    <div class="posters">
+      <h2 class="title">Posters</h2>
+      <div class="posters_wrapper">
+        <img src="./images/posters01.png" alt="posters">
+        <img src="./images/posters02.png" alt="posters">
+        <img src="./images/posters03.png" alt="posters">
+      </div>
+    </div>
+
+    <div class="others">
+      <h3 class="others_title">
+        Other<br>Works
+      </h3>
+      <img src="./images/works_01.png" alt="product">
+      <img src="./images/works_02.png" alt="product">
+      <img src="./images/works_03.png" alt="product">
+      <img src="./images/works_04.png" alt="product">
+      <img src="./images/works_05.png" alt="product">
+      <img src="./images/works_06.png" alt="product">
+      <img src="./images/works_07.png" alt="product">
+    </div>
+
+    <div class="bottom">
+      <h3 class="since">1919 to 1933</h3>
+      <h4>Architecture begins where engineering ends</h4>
+
+      <div class="txt_wrapper">
+        <div class="txt_1">
+          <p class="bottom_en">The Bauhaus movement had a<br>
+            profound influence on subsequent</p>
+          <p class="bottom_ko">바우하우스 운동은 후에 지대한 영향을 미쳤다</p>
+          <ul>
+            <li>Art</li>
+            <li>Architecture</li>
+            <li>Graphic Design</li>
+            <li>Interior Design</li>
+            <li>Industrial Design</li>
+            <li>Typography</li>
+          </ul>
+        </div>
+        <div class="txt_2">
+          <p class="bottom_en">Staff at the Bauhaus included<br>
+            prominent artists at various points</p>
+          <p class="bottom_ko">바우하우스 직원은 다양한 분야의 저명한 예술가들이 있었다</p>
+          <ul>
+            <li>Walter Gropius</li>
+            <li>Paul Klee</li>
+            <li>Wassily Kandinsky</li>
+            <li>László Moholy-Nagy</li>
+            <li>Herbert Bayer</li>
+            <li>Ludwig Mies van der Rohe</li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="portfolio">
+          <p>Portfolio</p>
+          <img src="./images/bottom_arrow.svg" alt="arrow">
+        </div>
+
+        <div class="bottom-bg">
+          <div class="circle_outside">겉눈</div>
+          <div class="circle_inside">속눈</div>
+        </div>
+    </div>
+    
   </main>
 </body>
 </html>
