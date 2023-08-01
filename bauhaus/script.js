@@ -382,22 +382,35 @@ gsap.to(".scissor", {
     gsap.to(".posters_1", {
       scrollTrigger: {
       start: "center center",
+      end: "bottom center",
       trigger:".posters_1", 
       scrub: 2,
-      pin: true,
+      pin: ".posters_wrapper",
     },
     yPercent:-100, duration: 1  })
 
-    gsap.set('.posters_2',{yPercent:0});
+    gsap.set(".others", { position: "fixed" }); // "others"를 고정된 위치로 설정합니다.
+
+    gsap.set('.posters_2', { yPercent: 0 });
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(".posters_2", {
       scrollTrigger: {
-      trigger:".posters_2", 
-      start: "center center",
-      scrub: 2,
-      pin: true,
-    },
-    yPercent:100, duration: 1  })
+        trigger: ".posters_2",
+        start: "center center",
+        scrub: 2,
+        pin: ".posters_wrapper",
+      },
+      yPercent: 100,
+      duration: 1,
+      onComplete: () => {
+        gsap.set(".others", { visibility: "visible" }); // 애니메이션이 끝나면 "others"를 다시 보이도록 설정합니다.
+      },
+      onReverseComplete: () => {
+        gsap.set(".others", { visibility: "hidden" }); // 애니메이션 역방향으로 돌아올 때 "others"를 숨기도록 설정합니다.
+      },
+    });    
+    
+      
 
         gsap.set('.posters_3',{yPercent:0});
     gsap.registerPlugin(ScrollTrigger);
@@ -405,7 +418,8 @@ gsap.to(".scissor", {
       scrollTrigger: {
       trigger:".posters_3", 
       start: "center center",
+      end: "bottom center",
       scrub: 2,
-      pin: true,
+      pin: ".posters_wrapper",
     },
     yPercent:-100, duration: 1  })
