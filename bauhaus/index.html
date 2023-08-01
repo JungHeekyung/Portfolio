@@ -22,6 +22,11 @@
 
   <!-- jQuery 문서연결 -->
   <script src="../common/jquery-3.7.0.min.js"></script>
+  <script src="../common/jquery.slim.min.js"></script>
+  <!-- scrollTrigger 플러그인 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="../common/ScrollTrigger.min.js"></script>
+  <!-- 개별 -->
   <script defer src="./script.js"></script>
 </head>
 <body>
@@ -58,8 +63,8 @@
     
       <div class="less">
         <img src="./images/Less.svg" alt="text_less">
-        <img src="./images/scissor.webp" alt="scissor">
-        <img src="./images/is More.svg" alt="text_ismore">
+        <img class="scissor" src="./images/scissor.webp" alt="scissor">
+        <img class="ismore" src="./images/is More.svg" alt="text_ismore">
       </div>
     </div>
 
@@ -79,12 +84,12 @@
     </div>
     <div class="manifesto_2_img">
       <img class="b" src="./images/b_b01.svg" alt="b_img">
-      <img src="./images/b_pic01.png" alt="picture">
-      <img src="./images/b_pic02.png" alt="picture">
+      <img class="b_pic1" src="./images/b_pic01.png" alt="picture">
+      <img class="b_pic2" src="./images/b_pic02.png" alt="picture">
       <img class="b" src="./images/b_b02.svg" alt="b_img">
-      <img class="polygon" src="./images/b_polygon01.svg" alt="polygon">
-      <img class="polygon" src="./images/b_polygon02.svg" alt="polygon">
-      <img class="polygon" src="./images/b_polygon03.svg" alt="polygon">
+      <img class="polygon b_polygon01" src="./images/b_polygon01.svg" alt="polygon">
+      <img class="polygon b_polygon02" src="./images/b_polygon02.svg" alt="polygon">
+      <img class="polygon b_polygon03" src="./images/b_polygon03.svg" alt="polygon">
     </div>
 
     <div class="manifesto_3">
@@ -101,8 +106,8 @@
         모든 미술가들에게 공예의 숙련이 필수적이다. 그 속에 창조적 상상력의 근원이 있다</p>
       <div class="manifesto_3_img">
         <img src="./images/craft_txt.svg" alt="craft_txt">
-        <img class="pic" src="./images/craft_pic01.png" alt="craft_picture">
-        <img class="pic" src="./images/craft_pic02.png" alt="craft_picture">
+        <img class="pic craft_pic01" src="./images/craft_pic01.png" alt="craft_picture">
+        <img class="pic craft_pic02" src="./images/craft_pic02.png" alt="craft_picture">
       </div>
     </div>
 
@@ -139,9 +144,9 @@
           <div class="history_1">
             <img class="h_pic01" src="./images/history_pic01.png" alt="weimar">
             <img class="h_polygon01" src="./images/history_polygon01.svg" alt="polygon">
-            <p class="sub_title">Weimar</p>
+            <p class="sub_title subtitle_w">Weimar</p>
             
-          <div class="history_link">
+          <div class="history_link history_link_1">
             <p><span>Weimar</span>
               바이마르<br>
               1919 - 1925
@@ -154,9 +159,9 @@
           <img class="h_pic02" src="./images/history_pic02.png" alt="Dessau">
           <img class="h_polygon02" src="./images/history_polygon02.svg" alt="polygon">
           <img class="h_polygon03" src="./images/history_polygon03.svg" alt="polygon">
-          <p class="sub_title">Dessau</p>
+          <p class="sub_title subtitle_d">Dessau</p>
           
-        <div class="history_link">
+        <div class="history_link history_link_2">
           <p><span>Dessau</span>
             데사우<br>
             1915 - 1932
@@ -168,9 +173,9 @@
       <div class="history_3">
         <img class="h_polygon04" src="./images/history_polygon04.svg" alt="polygon">
         <img class="h_pic03" src="./images/history_pic03.png" alt="Berlin">
-        <p class="sub_title">Berlin</p>
+        <p class="sub_title subtitle_b">Berlin</p>
         
-      <div class="history_link">
+      <div class="history_link history_link_3">
         <p><span>Berlin</span>
           베를린<br>
           1932 - 1933
@@ -183,9 +188,9 @@
     <div class="posters">
       <h2 class="title">Posters</h2>
       <div class="posters_wrapper">
-        <img src="./images/posters01.png" alt="posters">
-        <img src="./images/posters02.png" alt="posters">
-        <img src="./images/posters03.png" alt="posters">
+        <img class="posters_1" src="./images/posters01.png" alt="posters">
+        <img class="posters_2" src="./images/posters02.png" alt="posters">
+        <img class="posters_3" src="./images/posters03.png" alt="posters">
       </div>
     </div>
 
@@ -193,13 +198,13 @@
       <h3 class="others_title">
         Other<br>Works
       </h3>
-      <img src="./images/works_01.png" alt="product">
-      <img src="./images/works_02.png" alt="product">
-      <img src="./images/works_03.png" alt="product">
-      <img src="./images/works_04.png" alt="product">
-      <img src="./images/works_05.png" alt="product">
-      <img src="./images/works_06.png" alt="product">
-      <img src="./images/works_07.png" alt="product">
+      <img class="product1" src="./images/works_01.png" alt="product">
+      <img class="product2" src="./images/works_02.png" alt="product">
+      <img class="product3" src="./images/works_03.png" alt="product">
+      <img class="product4" src="./images/works_04.png" alt="product">
+      <img class="product5" src="./images/works_05.png" alt="product">
+      <img class="product6" src="./images/works_06.png" alt="product">
+      <img class="product7" src="./images/works_07.png" alt="product">
     </div>
 
     <div class="bottom">

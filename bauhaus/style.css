@@ -46,7 +46,9 @@
 html {
   font-size: 0.521vw;
 }
-
+main {
+  overflow: hidden;
+}
 /****** header ******/
 
 header {
@@ -344,7 +346,7 @@ main .manifesto_4 p:nth-child(4) {
 }
 main .manifesto_4 .brand_list {
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 8.13vw;
   gap: 7vw;
 }
@@ -624,7 +626,7 @@ main .posters .posters_wrapper img:nth-child(2) {
 
 main .others {
   width: 100%;
-  height: 49.22vw;
+  height: 100vh;
   background-color: #1B1C1E;
   position: relative;
   overflow: hidden;
@@ -640,6 +642,7 @@ main .others .others_title {
   top: 15%;
   left: 50%;
   transform: translate(-50%);
+  z-index: 111;
 }
 main .others img {
   position: absolute;
