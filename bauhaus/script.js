@@ -299,6 +299,7 @@ gsap.to(".scissor", {
       },
       y:-1000, duration: 1  })
  */
+
     var $sections = document.querySelectorAll(".others");
     var tl = gsap.timeline({
     scrollTrigger: {
@@ -372,6 +373,39 @@ gsap.to(".scissor", {
   });
 
 
-  $(window).on('scroll',function(){
+/*   $(window).on('scroll',function(){
       $(".posters_2").css('bottom',$(window).scrollTop()*-1);
-    });
+    }); */
+
+    gsap.set('.posters_1',{yPercent:0});
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".posters_1", {
+      scrollTrigger: {
+      start: "center center",
+      trigger:".posters_1", 
+      scrub: 2,
+      pin: true,
+    },
+    yPercent:-100, duration: 1  })
+
+    gsap.set('.posters_2',{yPercent:0});
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".posters_2", {
+      scrollTrigger: {
+      trigger:".posters_2", 
+      start: "center center",
+      scrub: 2,
+      pin: true,
+    },
+    yPercent:100, duration: 1  })
+
+        gsap.set('.posters_3',{yPercent:0});
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".posters_3", {
+      scrollTrigger: {
+      trigger:".posters_3", 
+      start: "center center",
+      scrub: 2,
+      pin: true,
+    },
+    yPercent:-100, duration: 1  })
