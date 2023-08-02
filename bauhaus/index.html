@@ -11,10 +11,10 @@
 
    <!-- og -->
   <!--  
-   <meta property="og:title" content="Mint Festa 2023">
-   <meta property="og:description" content="HAVE A NICE TRIP 2023">
-   <meta property="og:image" content="https://team-oozz.github.io/team-oozz/images/og-img.jpg">
-   <meta property="og:url" content="https://team-oozz.github.io/team-oozz">
+   <meta property="og:title" content="Bauhaus">
+   <meta property="og:description" content="About the Bauhaus">
+   <meta property="og:image" content="">
+   <meta property="og:url" content="https://jungheekyung.github.io/Portfolio/bauhaus">
     -->
 
 <link rel="stylesheet" href="../common/style/reset.css">
@@ -26,6 +26,8 @@
   <!-- scrollTrigger 플러그인 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="../common/ScrollTrigger.min.js"></script>
+  <!-- 부드러운 스크롤 -->
+  <script src="../common/scrollbar.js"></script>
   <!-- 개별 -->
   <script defer src="./script.js"></script>
 </head>
@@ -39,8 +41,15 @@
   </header>
 
   <main>
+
+    <scrollbar>
+      <div class="scroll-content">
+
     <div class="title">
-    <h1>Design Crafts<br>Fine Arts</h1>
+      <div class="title_wrapper">
+    <h1><span>Design Crafts</span>
+    <span>Fine Arts</span></h1>
+    </div>
     <p>+ Walter Gropius</p>
     </div>
 
@@ -68,18 +77,19 @@
       </div>
     </div>
 
+
     <div class="manifesto_2">
-      <p>The art</p>
+      <p class="txt_color1">The art</p>
       <div class="gif1">
         <img src="./images/moving1.gif" alt="gifimg">
-        <p>schools</p>
+        <p class="txt_color2">schools</p>
       </div>
-      <p>must return</p>
+      <p class="txt_color3">must return</p>
       <div class="gif2">
-        <p>to the</p>
+        <p class="txt_color4">to the</p>
         <img src="./images/moving2.gif" alt="gifimg">
       </div>
-      <p>workshop</p>
+      <p class="txt_color5">workshop</p>
       <p class="manifesto_2_ko">이제 미술학교들은 다시 공방과 통합되어야 한다.</p>
     </div>
     <div class="manifesto_2_img">
@@ -184,15 +194,32 @@
       </div>
     </div>
     </div>
-
+<!--     <div class="posters">
+    <h2 class="title">Posters</h2>
+    <div data-scroll-sticky data-scroll-target=".posters_wrapper" class="active">
+      <div class="posters_wrapper">
+          <div data-scroll data-scroll-speed="2" data-scroll-target=".poster_1" class="active">
+            <img class="posters_1" src="./images/posters01.png" alt="posters">
+          </div>
+          <div data-scroll-speed="-2" data-scroll-target=".poster_2" class="active">
+            <img class="posters_2" src="./images/posters02.png" alt="posters">
+          </div>
+          <div data-scroll-speed="2" data-scroll-target=".poster_3" class="active">
+            <img class="posters_3" src="./images/posters03.png" alt="posters">
+          </div>
+      </div>
+  </div>
+</div> -->
     <div class="posters">
       <h2 class="title">Posters</h2>
+    </div>
       <div class="posters_wrapper">
         <img class="posters_1" src="./images/posters01.png" alt="posters">
         <img class="posters_2" src="./images/posters02.png" alt="posters">
         <img class="posters_3" src="./images/posters03.png" alt="posters">
-      </div>
     </div>
+  
+  </div>
 
     <div class="others">
       <h3 class="others_title">
@@ -205,6 +232,7 @@
       <img class="product5" src="./images/works_05.png" alt="product">
       <img class="product6" src="./images/works_06.png" alt="product">
       <img class="product7" src="./images/works_07.png" alt="product">
+      <img src="./images/about_circle2.svg" alt="circle_text" class="circle_text">
     </div>
 
     <div class="bottom">
@@ -242,7 +270,9 @@
 
         <div class="portfolio">
           <p>Portfolio</p>
+          <a href="https://jungheekyung.github.io/Portfolio" target="_blank">
           <img src="./images/bottom_arrow.svg" alt="arrow">
+          </a>
         </div>
 
         <div class="bottom-bg">
@@ -250,7 +280,22 @@
           <div class="circle_inside">속눈</div>
         </div>
     </div>
+
+  </div>
+  <div class="scrollbar-track scrollbar-track-x">
+      <div class="scrollbar-thumb scrollbar-thumb-x"></div>
+  </div>
+  <div class="scrollbar-track scrollbar-track-y">
+      <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+  </div>
+</scrollbar>
     
   </main>
+
+  <script>
+    var Scrollbar = window.Scrollbar;
+  
+    Scrollbar.init(document.querySelector('#my-scrollbar'), options);
+  </script>
 </body>
 </html>
