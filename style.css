@@ -339,10 +339,23 @@ main .project_wrapper .project3 img {
   transform: translateY(50%);
   cursor: default;
 }
+main .project_wrapper .project4 img {
+  width: 18.160vw;
+  height: 9.167vw;
+  transform: translateY(55%);
+  cursor: default;
+}
+/* 프로젝트0 포트폴리오 */
+main .project_wrapper .project0 img {
+  width: 18.385vw;
+  height: 10.365vw;
+  transform: translateY(45%);
+  cursor: default;
+}
 main .project_wrapper .project4 {
   border-right: none;
 }
-main .project_wrapper .project5 {
+main .project_wrapper .project0 {
   border-bottom: none;
 }
 main .bottom_wrapper {
