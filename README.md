@@ -1,13 +1,18 @@
 # Portfolio
 ******
 
-##header
-* 3영역으로 나누어 flex로 작업
-* 내부도 각각 flex
-*****
+## Skills & Tools
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/> <img src="https://img.shields.io/badge/VisualStudiocode-007ACC?style=flat-square&logo=VisualStudiocode&logoColor=white"/>
 
-##main
-* 방 일러스트 작업 : width/height 1920px기준의 vw로 단위 통일. 호버시 정확한 위치 맞춤.
-* project 영역 : grid로 4열 (1fr)로 구성. 행은 grid-auto-rows: 22.833vw; 많아지면 밑으로 늘어날 수 있도록 작업.
-*****
+---
 
+- 홈페이지의 느낌의 독특한 포트폴리오를 컨셉으로 제작
+- 방의 실제 요소를 그린 일러스트 작업에 마우스 이벤트를 이용한 재미 요소 추가
+- 피그마를 이용한 디자인. VScode를 사용하여 HTML, CSS, Javascript 편집
+- 포트폴리오이면서 개인 홈페이지로 운영되고 관리 할 예정
+
+---
+
+## 작업 기록
+
+### 포트폴리오 구성
