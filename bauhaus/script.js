@@ -419,6 +419,24 @@ $(document).ready(function() {
 });
 
 
+/* 
+$(document).ready(function() {
+  const txtm = document.querySelectorAll(".Manifesto_1 span");
+
+  // 각 단어들을 순차적으로 나타내는 함수
+  const showWordsSequentially = (index) => {
+    if (index < txtm.length) {
+      txtm[index].style.animation = "showWord 1s forwards";
+      index++;
+      setTimeout(() => showWordsSequentially(index), 500); // 다음 단어가 나타나기까지의 시간 설정
+    }
+  };
+
+  showWordsSequentially(0); // 첫 번째 단어부터 시작하여 순차적으로 나타냄
+});
+ */
+
+/* 
 gsap.set(".txt_color1",{opacity:0.2});
 gsap.to(".txt_color1", {
   scrollTrigger: {
@@ -460,3 +478,71 @@ gsap.to(".txt_color5", {
     },
     opacity:0.9
 });
+
+
+
+gsap.set(".txt_move1",{opacity:0, y:50});
+gsap.to(".txt_move1", {
+  scrollTrigger: {
+    trigger:".txt_move1", 
+    start: "top center",
+    scrub:1
+    },
+    opacity:1,
+    y:0,
+});
+
+gsap.set(".txt_move2",{opacity:0, y:10});
+gsap.to(".txt_move2", {
+  scrollTrigger: {
+    trigger:".txt_move2", 
+    start: "top 70%",
+    scrub:1
+    },
+    opacity:1,
+    y:0
+});
+
+gsap.set(".txt_move3",{opacity:0, y:10});
+gsap.to(".txt_move3", {
+  scrollTrigger: {
+    trigger:".txt_move3", 
+    start: "top 70%",
+    scrub:1
+    },
+    opacity:1,
+    y:0,
+});
+
+gsap.set(".txt_move4",{opacity:0, y:10});
+gsap.to(".txt_move4", {
+  scrollTrigger: {
+    trigger:".txt_move4", 
+    start: "top 70%",
+    scrub:1
+    },
+    opacity:1,
+    y:0,
+});
+
+gsap.set(".txt_move5",{opacity:0, y:10});
+gsap.to(".txt_move5", {
+  scrollTrigger: {
+    trigger:".txt_move5", 
+    start: "top 70%",
+    scrub:1
+    },
+    opacity:1,
+    y:0,
+});
+
+gsap.set(".txt_move6",{opacity:0, y:10});
+gsap.to(".txt_move6", {
+  scrollTrigger: {
+    trigger:".txt_move6", 
+    start: "top 70%",
+    scrub:1
+    },
+    opacity:1,
+    y:0,
+}); */
