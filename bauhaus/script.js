@@ -419,24 +419,39 @@ $(document).ready(function() {
 });
 
 
-/* 
-$(document).ready(function() {
-  const txtm = document.querySelectorAll(".Manifesto_1 span");
 
-  // 각 단어들을 순차적으로 나타내는 함수
-  const showWordsSequentially = (index) => {
-    if (index < txtm.length) {
-      txtm[index].style.animation = "showWord 1s forwards";
-      index++;
-      setTimeout(() => showWordsSequentially(index), 500); // 다음 단어가 나타나기까지의 시간 설정
-    }
-  };
+// ***********
 
-  showWordsSequentially(0); // 첫 번째 단어부터 시작하여 순차적으로 나타냄
+
+//스크롤시 폰트 올라오는 값 -->yj
+/* $(document).ready(function () {
+  var windowHeight = $(window).height();
+
+  function animateElements() {
+    var scrollTop = $(window).scrollTop();
+
+    $('.txt_move').each(function () {
+      var offsetTop = $(this).offset().top;
+      if (scrollTop + windowHeight > offsetTop) {
+        $(this).addClass('show', {
+          duration: 600,
+        });
+      }
+    });
+  }
+
+  animateElements();
+
+  $(window).on('scroll', function () {
+    animateElements();
+  });
 });
  */
+// ***********
 
-/* 
+
+
+
 gsap.set(".txt_color1",{opacity:0.2});
 gsap.to(".txt_color1", {
   scrollTrigger: {
@@ -479,70 +494,129 @@ gsap.to(".txt_color5", {
     opacity:0.9
 });
 
-
+// 선언문 텍스트이벤트
 
 gsap.set(".txt_move1",{opacity:0, y:50});
 gsap.to(".txt_move1", {
-  scrollTrigger: {
-    trigger:".txt_move1", 
-    start: "top center",
-    scrub:1
-    },
-    opacity:1,
-    y:0,
-});
-
-gsap.set(".txt_move2",{opacity:0, y:10});
+  scrollTrigger: {trigger:".txt_move1", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move2",{opacity:0, y:50});
 gsap.to(".txt_move2", {
-  scrollTrigger: {
-    trigger:".txt_move2", 
-    start: "top 70%",
-    scrub:1
-    },
-    opacity:1,
-    y:0
-});
-
-gsap.set(".txt_move3",{opacity:0, y:10});
+  scrollTrigger: {trigger:".txt_move2", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move3",{opacity:0, y:50});
 gsap.to(".txt_move3", {
-  scrollTrigger: {
-    trigger:".txt_move3", 
-    start: "top 70%",
-    scrub:1
-    },
-    opacity:1,
-    y:0,
-});
-
-gsap.set(".txt_move4",{opacity:0, y:10});
+  scrollTrigger: {trigger:".txt_move3", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move4",{opacity:0, y:50});
 gsap.to(".txt_move4", {
-  scrollTrigger: {
-    trigger:".txt_move4", 
-    start: "top 70%",
-    scrub:1
-    },
-    opacity:1,
-    y:0,
-});
-
-gsap.set(".txt_move5",{opacity:0, y:10});
+  scrollTrigger: {trigger:".txt_move4", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move5",{opacity:0, y:50});
 gsap.to(".txt_move5", {
-  scrollTrigger: {
-    trigger:".txt_move5", 
-    start: "top 70%",
-    scrub:1
-    },
-    opacity:1,
-    y:0,
-});
-
-gsap.set(".txt_move6",{opacity:0, y:10});
+  scrollTrigger: {trigger:".txt_move5", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move6",{opacity:0, y:50});
 gsap.to(".txt_move6", {
-  scrollTrigger: {
-    trigger:".txt_move6", 
-    start: "top 70%",
-    scrub:1
-    },
-    opacity:1,
-    y:0,
-}); */
+  scrollTrigger: {trigger:".txt_move6", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move7",{opacity:0, y:50});
+gsap.to(".txt_move7", {
+  scrollTrigger: {trigger:".txt_move7", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move8",{opacity:0, y:50});
+gsap.to(".txt_move8", {
+  scrollTrigger: {trigger:".txt_move8", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move9",{opacity:0, y:50});
+gsap.to(".txt_move9", {
+  scrollTrigger: {trigger:".txt_move9", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move10",{opacity:0, y:50});
+gsap.to(".txt_move10", {
+  scrollTrigger: {trigger:".txt_move10", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move11",{opacity:0, y:50});
+gsap.to(".txt_move11", {
+  scrollTrigger: {trigger:".txt_move11", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move12",{opacity:0, y:50});
+gsap.to(".txt_move12", {
+  scrollTrigger: {trigger:".txt_move12", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move13",{opacity:0, y:50});
+gsap.to(".txt_move13", {
+  scrollTrigger: {trigger:".txt_move13", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move14",{opacity:0, y:50});
+gsap.to(".txt_move14", {
+  scrollTrigger: {trigger:".txt_move14", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move15",{opacity:0, y:50});
+gsap.to(".txt_move15", {
+  scrollTrigger: {trigger:".txt_move15", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move16",{opacity:0, y:50});
+gsap.to(".txt_move16", {
+  scrollTrigger: {trigger:".txt_move16", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move17",{opacity:0, y:50});
+gsap.to(".txt_move17", {
+  scrollTrigger: {trigger:".txt_move17", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move18",{opacity:0, y:50});
+gsap.to(".txt_move18", {
+  scrollTrigger: {trigger:".txt_move18", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move19",{opacity:0, y:50});
+gsap.to(".txt_move19", {
+  scrollTrigger: {trigger:".txt_move19", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move20",{opacity:0, y:50});
+gsap.to(".txt_move20", {
+  scrollTrigger: {trigger:".txt_move20", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move21",{opacity:0, y:50});
+gsap.to(".txt_move21", {
+  scrollTrigger: {trigger:".txt_move21", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move22",{opacity:0, y:50});
+gsap.to(".txt_move22", {
+  scrollTrigger: {trigger:".txt_move22", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move23",{opacity:0, y:50});
+gsap.to(".txt_move23", {
+  scrollTrigger: {trigger:".txt_move23", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move24",{opacity:0, y:50});
+gsap.to(".txt_move24", {
+  scrollTrigger: {trigger:".txt_move24", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move25",{opacity:0, y:50});
+gsap.to(".txt_move25", {
+  scrollTrigger: {trigger:".txt_move25", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move26",{opacity:0, y:50});
+gsap.to(".txt_move26", {
+  scrollTrigger: {trigger:".txt_move26", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move27",{opacity:0, y:50});
+gsap.to(".txt_move27", {
+  scrollTrigger: {trigger:".txt_move27", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move28",{opacity:0, y:50});
+gsap.to(".txt_move28", {
+  scrollTrigger: {trigger:".txt_move28", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move29",{opacity:0, y:50});
+gsap.to(".txt_move29", {
+  scrollTrigger: {trigger:".txt_move29", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move30",{opacity:0, y:50});
+gsap.to(".txt_move30", {
+  scrollTrigger: {trigger:".txt_move30", start: "top center"},
+    opacity:1, y:0});
+gsap.set(".txt_move31",{opacity:0, y:50});
+gsap.to(".txt_move31", {
+  scrollTrigger: {trigger:".txt_move31", start: "top center"},
+    opacity:1, y:0});

@@ -832,3 +832,22 @@ main .bottom-bg .circle_inside {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+.txt_move {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: showWord 1s forwards;
+}
+
+@keyframes showWord {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.manifesto_1 span {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
