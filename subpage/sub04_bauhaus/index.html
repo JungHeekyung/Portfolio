@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+
+    <!-- og -->
+
+    <meta property="og:title" content="퍼블리셔의 방">
+    <meta property="og:description" content="정희경의 웹 포트폴리오 페이지입니다">
+    <meta property="og:image" content="https://jungheekyung.github.io/Portfolio/images/openGraph.png">
+    <meta property="og:url" content="https://jungheekyung.github.io/Portfolio/index">
+    <!-- 
+    favicon.ico
+    가장 기본적인 파비콘 파일로 16x16 크기를 가짐
+    일반적으로 파비콘 파일은 root 디렉토리 바로 아래 index.html 문서와 같은 위치에 둠
+   -->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../common/style/reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../../common/jquery-3.7.0.min.js"></script>
+    <script defer src="./script.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <p><a href="https://jungheekyung.github.io/Portfolio">Jung Heekyung</a></p>
+        <menu>
+            <li><a href="#">About</a></li>
+            <li><a href="https://jungheekyung.github.io/Portfolio#project_wrapper">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </menu>
+        <div class="btn_img">
+            <img id="potion" src="./images/menu01.svg" alt="potion img">
+            <img id="clock" src="./images/menu02.svg" alt="clock img">
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="title">Bauhaus</div>
+        <div class="content_wrapper">
+        <div class="content_blank"><p>blank</p></div>
+        <div class="content">
+            <p class="content_title">JavaScript를 활용한 동적 구현 웹 디자인
+                <span>2023.07.26 - 08.02</span>
+            </p>
+            <div class="img_wrapper">
+            <img src="./images/bau_main_01.png" alt="img_pc" class="main_pc">
+            </div>
+            <article class="overview">
+                <h3>OVERVIEW</h3>
+                <p>
+                    독일의 미술과 공예, 사진, 건축 등을 교육한 학교로<br>
+                    바우하우스의 선언문과 작품을 기반으로 제작한 웹 페이지이며 그 철학을 바탕으로 디자인<br>
+                    Javascript를 활용해 동적인 웹으로 제작<br>
+                </p>
+            </article>
+            <div class="skill">
+                <h3 class="skill_title">사용 기술</h3>
+                <p class="skill_main">HTML5  /  CSS3  /  Javascript  /  Figma </p>
+            </div>
+            <div class="style">
+                <div class="style_01">
+                    <h3>FONT</h3>
+                    <img src="./images/bau_font.svg" alt="font">
+                </div>
+                <div class="style_02">
+                    <h3>COLOR</h3>
+                    <img src="./images/bau_color.svg" alt="color">
+                    <p>#단순한 #원색의 #감각적인</p>
+                </div>
+            </div>
+            <div class="elements">
+                <h3>ELEMENTS</h3>
+                <img src="./images/bau_elements_01.png" alt="elements1" class="elements_01">
+                <img src="./images/bau_elements_02.png" alt="elements2" class="elements_02">
+                <img src="./images/bau_elements_03.png" alt="elements3" class="elements_03">
+                <img src="./images/bau_elements_04.svg" alt="elements4" class="elements_04">
+                <img src="./images/bau_elements_05.svg" alt="elements5" class="elements_05">
+                <img src="./images/bau_elements_06.svg" alt="elements6" class="elements_06">
+
+                <div class="elements_01_txt">
+                    <h4>Grayscale과 Blending mode</h4>
+                    <p>바우하우스의 인물과 건물, 제품등의 실제 요소를<br>
+                        흑백으로 나타내어 원색과의 색 대비를 극대화 시키고<br>
+                        mix-blend-mode를 사용하여 컬러와 어우러지도록 표현.<br>
+                        오늘날까지도 다양한 분야에 많은 영향과 영감을 주는 바우하우스의<br>
+                        철학과 역사를 느낄수 있도록 디자인.</p>
+                </div>
+                <div class="elements_02_txt">
+                    <h4>기본도형의 사용</h4>
+                    <p>바우하우스의 교육 철학은 효과적이고 효율적인 디자인을 중심으로 <br>
+                        했기 때문에 감각적이고 단순한 형태와 색감을 사용.<br>
+                        간결한 모양과 제한된 색을 이용해 색다른 디자인을 만들어내는<br>
+                        가능성을 보여주는 것이야말로 바우하우스다운 디자인이라 생각한다.</p>
+                </div>
+            </div>
+
+            <div class="problem">
+                <h3 class="problem_title">문제 & 해결</h3>
+                <p class="problem_description">
+                    <span class="primary">SVG 파일이 화면에 따라 선굵기가 달라지는 현상.</span>
+                    해당 SVG파일의 <span class="emph">'vector-effect'의 속성을 'non-scaling-stroke'</span>으로 변경.<br>
+                    변경 후 선의 굵기가 일괄적으로 굵어지거나 얇아지면 <span class="emph">‘stroke-width’ 값을 조절</span>한다.</p>
+                <p class="problem_description"><span class="primary">Mobile 우선 기준으로 작업<br>
+                    PC 작업할때 하단 변경이 쉽지 않았음. </span>
+                    하단 작업 중 Mobile과 Tablet, PC가 각각 다른점을 생각 하지 않고 Mobile 구조에만 맞춰 HTML작업.<br>
+                    나머지는 Position으로 개별적으로 위치를 맞출 수 밖에 없었다.<br>
+                    <span class="emph">반응형 웹을 제작할 때에는 HTML구조를 모두 고려하여 작업</span>해야 한다는 점.</p>
+                <p class="problem_description"><span class="primary">스와이퍼 사용</span>
+                    swiperjs 사용.<br>
+                    보이지 않는 영역을 'display:none' 으로 감춰두면 auto rolling이 작동되지 않는 현상.<br> 
+                    <span class="emph">>swiperjs 사이트에 규정된 'breakpoints'를 사용</span>하여 적용시키니 작동이 되었다.</p>
+                <p class="problem_description"><span class="primary">포인트의 고민. 키프레임 애니메이션으로 불빛 반짝임 효과</span>
+                    디자인적으로 포인트를 줄 수 있는 부분이 있어야 한다고 생각되어<br>
+                    키프레임 애니메이션을 사용. 
+                    <span class="emph">세개의 svg 이미지가 번갈아 나오도록 구성하여 전구가 깜빡이는 느낌</span>을 내어보았다.</p>
+            </div>
+            <div class="bottom_btn">
+                <p>View Site</p>
+                <img src="./images/btn01_arrow.svg" alt="arrow" class="arrow">
+                <a href="https://jungheekyung.github.io/Portfolio/mrmen" target="_blank">
+                    <img src="./images/btn02_img.svg" alt="button-img" class="btn"></a>
+            </div>
+        </div>
+        </div>
+            
+
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>kerryjhk@gmail.com</p>
+    </footer>
+    <div class="texture"></div>
+</body>
+
+</html>
