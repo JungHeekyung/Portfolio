@@ -302,7 +302,7 @@ main .content_wrapper .content .style .style_02 p {
   word-spacing: 20px;
 }
 main .content_wrapper .content .elements {
-  height: 71.09vw;
+  height: 69.09vw;
   border-bottom: var(--border-style);
   position: relative;
 }
@@ -316,28 +316,28 @@ main .content_wrapper .content .elements .elements_01 {
   width: 18.44vw;
   height: 11.67vw;
   position: absolute;
-  top: 9.01vw;
+  top: 10.10vw;
   left: 7.29vw;
 }
 main .content_wrapper .content .elements .elements_02 {
   width: 22.50vw;
   height: 27.86vw;
   position: absolute;
-  top: 4.74vw;
+  top: 5.68vw;
   left: 20.05vw;
 }
 main .content_wrapper .content .elements .elements_03 {
   width: 17.19vw;
   height: 15.57vw;
   position: absolute;
-  top: 25.57vw;
+  top: 26.67vw;
   left: 7.55vw;
 }
 main .content_wrapper .content .elements .elements_04 {
   width: 15.21vw;
   height: 7.86vw;
   position: absolute;
-  top: 43.91vw;
+  top: 44.95vw;
   left: 7.92vw;
   z-index: 111;
 }
@@ -345,15 +345,38 @@ main .content_wrapper .content .elements .elements_05 {
   width: 16.30vw;
   height: 15.36vw;
   position: absolute;
-  top: 42.71vw;
+  top: 43.80vw;
   left: 15.52vw;
 }
 main .content_wrapper .content .elements .elements_06 {
   width: 11.56vw;
   height: 11.56vw;
   position: absolute;
-  top: 38.13vw;
+  top: 39.17vw;
   left: 28.02vw;
+}
+main .content_wrapper .content .elements .elements_01_txt {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 21.09vw;
+  left: 46.09vw;
+  line-height: 1.8vw;
+}
+main .content_wrapper .content .elements .elements_01_txt h4 {
+  font-family: var(--main-font-ExtraBold);
+  margin-bottom: 2vw;
+}
+
+main .content_wrapper .content .elements .elements_02_txt {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 47.43vw;
+  left: 46.09vw;
+  line-height: 1.8vw;
+}
+main .content_wrapper .content .elements .elements_02_txt h4 {
+  font-family: var(--main-font-ExtraBold);
+  margin-bottom: 2vw;
 }
 
 main .content_wrapper .problem {
@@ -393,8 +416,12 @@ main .content_wrapper .bottom_btn {
   gap: 13px;
 
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   right: 50px;
+}
+main .content_wrapper .bottom_btn .btn {
+  width: 13.83vw;
+  height: 6.93vw;
 }
 main .content_wrapper .bottom_btn .arrow {
   width: 29px;
