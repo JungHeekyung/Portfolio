@@ -223,7 +223,9 @@ main .en {
   background-color: #fff;
   letter-spacing: -2px;
 }
-
+.mySwiper {
+  background-color: #fff;
+}
 main .character_img {
   background-color: #fff;
   padding-top: 65px;
