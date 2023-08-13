@@ -152,26 +152,21 @@ main .about_wrapper li:nth-child(4) .arrow {
 /* hover */
 
 
-main .about_wrapper .sub_title li:nth-child(1) a:hover {
+/* main .about_wrapper .sub_title li:nth-child(1) a:hover {
   background: url(./images/about_1.png) no-repeat 50% 50% / cover;
   transition: 1s;
-  /* color: #028aca */
-  /* text-indent: -9999px; */
 }
 main .about_wrapper .sub_title li:nth-child(2) a:hover {
   background: url(./images/about_2.png) no-repeat 50% 50% / cover;
   transition: 1s;
-  /* color: #028aca */
-  /* text-indent: -9999px; */
 }
 main .about_wrapper .sub_title li:nth-child(3) a:hover {
   background: url(./images/about_3.png) no-repeat 50% 50% / cover;
   transition: 1s;
-  /* color: #028aca */
 }
 main .about_wrapper .sub_title li:nth-child(4) a:hover {
   background-color: #ffd503;
-}
+} */
 /* @keyframes move {
   from {
     transform: scaleY(0%);
