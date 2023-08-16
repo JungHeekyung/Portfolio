@@ -198,7 +198,7 @@ main .txt-tools {
   /* align-items: center; */
 }
 main .txt-tools .hello {
-  padding: 90px 50px 0 170px;
+  padding: 3.69vw 2.60vw 3vw 8.85vw;
   font-size: 1.8rem;
   line-height: 3rem;
   border-bottom: 1px solid #14303f;
@@ -208,21 +208,22 @@ main .txt-tools .hello span {
 }
 main .txt-tools .career {
   font-size: 1.8rem;
-  padding: 60px 50px 0 170px;
+  padding: 3.13vw 2.60vw 0 8.85vw;
+  margin-bottom: 2vw;
   grid-row: 2 / 3;
 }
 
 main .txt-tools .career p {
   font-family: var(--main-font-light);
-  margin-top: 30px;
+  margin-top: 2.56vw;
   font-weight: 200;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.01vw;
   line-height: 3rem;
 }
 main .txt-tools .career span {
   font-family: var(--main-font-ExtraBold);
   font-weight: 800;
-  margin: 2px 0;
+  margin: 0.4vw 0;
   display: block;
 }
 main .tools_wrapper {
@@ -230,25 +231,26 @@ main .tools_wrapper {
   border-left: 1px solid #14303f;
   display: grid;
   grid-template-columns: 4fr 6fr;
-  grid-template-rows: 250px 250px 230px 150px;
-  padding: 150px 50px;
-  gap: 20px;
+  grid-template-rows: 13.02vw 13.02vw 11.98vw 7.81vw;
+  padding: 7.81vw 2.60vw;
+  gap: 1.04vw;
   grid-row: 1 / span 3;
 }
 main .tools_wrapper .tools {
   margin: 0 auto;
 }
 main .tools_wrapper .tools img {
-  margin: 0 5px;
+  margin: 0 0.26vw;
 }
 main .tools_wrapper h2 {
   font-family: var(--en-font);
-  font-size: 25px;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 0.78vw;
 }
 main .tools_wrapper .toolstxt {
   font-size: 1.8rem;
-  line-height: 28px;
+  line-height: 1.46vw;
+  padding-left: 2vw;
 }
 /****** footer ******/
 
@@ -258,6 +260,7 @@ footer {
   line-height: 80px;
 }
 footer p {
+  font-size: 2.5rem;
   margin-left: 30px;
   font-weight: 700;
 }
