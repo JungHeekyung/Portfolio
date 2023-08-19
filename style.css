@@ -133,7 +133,7 @@ main .myroom {
   background-color: #146213;
   background-image: url(./images/room_wallpattern.svg);
   background-size: 20%;
-  border-bottom: 2px solid #14303f;
+  border-bottom: 1px solid #14303f;
   overflow: hidden;
 
   position: relative;
