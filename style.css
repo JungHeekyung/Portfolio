@@ -287,6 +287,8 @@ main .skill {
   font-family: var(--en-font);
   font-size: 5rem;
   margin-top: 100px;
+  word-spacing: 1rem;
+  line-height: 7rem;
 }
 main .skill span {
   display: block;
