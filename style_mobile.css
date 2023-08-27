@@ -1,9 +1,10 @@
 @charset "utf-8";
 
-
-header  p {
-  
+header {
+    height: 130px;
+    display: block;
 }
-header .btn_img {
-
+header  p {
+  width: 100%;
+  border-bottom: var(--border-style);
 }
