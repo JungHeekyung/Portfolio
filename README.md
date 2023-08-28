@@ -1,4 +1,5 @@
-# Portfolio
+# Portfolio   
+https://jungheekyung.github.io/Portfolio/
 
 ## Skills & Tools
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/> <img src="https://img.shields.io/badge/VisualStudiocode-007ACC?style=flat-square&logo=VisualStudiocode&logoColor=white"/>
@@ -45,7 +46,9 @@ width/height 1920px기준의 vw로 단위 통일. 위치도 vw로 적용시켜 �
    > 클릭 시 프롬프트 띄우기 추가 / 레이어 팝업 추가 / 요소에 어바웃페이지 링크
   
  - [ ]  반응형 웹으로 구현하기
- - [ ]  컨택트 페이지 이메일 전송 추가
- - [ ]  프로젝트4 바우하우스 작업 후 설명페이지 작성 및 링크연결
+ - [ ]  컨택 페이지 이메일 전송 추가
+ - [x]  프로젝트4 바우하우스 작업 후 설명페이지 작성 및 링크연결
 
+ - [ ]  컨택 페이지를 라이브러리로 변경
+   > 게시판 스타일의 스크립트 리스트 만들기 / 스크립트 보관
  
