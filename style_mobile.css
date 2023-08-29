@@ -1,10 +1,18 @@
 @charset "utf-8";
 
 header {
-    height: 130px;
-    display: block;
+    height: 66px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 33px;
 }
 header  p {
   width: 100%;
+  font-size: 14px;
   border-bottom: var(--border-style);
 }
+header .btn_img {
+/*   grid-column: 2 / 3;
+  grid-row: 1 span 3; */
+}
+
