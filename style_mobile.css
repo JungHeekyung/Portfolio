@@ -10,9 +10,24 @@ header  p {
   width: 100%;
   font-size: 14px;
   border-bottom: var(--border-style);
+  grid-area: 1 / 1 / 2 / 2;
+  line-height: 33px;
+}
+header menu {
+  grid-area: 2 / 1 / 3 / 2;
+  line-height: 33px;
+  font-size: 14px;
+  width: 70vw;
+  border-right: var(--border-style);
 }
 header .btn_img {
-/*   grid-column: 2 / 3;
-  grid-row: 1 span 3; */
+  grid-area: 1 / 2 / 3 / 3;
+  width: 30vw;
+  border-left: var(--border-style);
 }
-
+header .btn_img img:first-child {
+  width: 10.992vw;
+}
+header .btn_img img:last-child {
+  width: 9.992vw;
+}
