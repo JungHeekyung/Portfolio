@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+html {
+  font-size: 2.083vw;
+}
 header {
     height: 66px;
     display: grid;
@@ -9,7 +11,7 @@ header {
 header  p {
   width: 100%;
   font-size: 14px;
-  border-bottom: var(--border-style);
+  border-bottom: 1px solid #14303f;
   grid-area: 1 / 1 / 2 / 2;
   line-height: 33px;
 }
@@ -18,7 +20,7 @@ header menu {
   line-height: 33px;
   font-size: 14px;
   width: 70vw;
-  border-right: var(--border-style);
+  border-right: 1px solid #14303f;
 }
 header .btn_img {
   grid-area: 1 / 2 / 3 / 3;
@@ -30,4 +32,18 @@ header .btn_img img:first-child {
 }
 header .btn_img img:last-child {
   width: 9.992vw;
+}
+
+
+main .skill {
+  height: 35.917vw;
+  margin-top: 12vw;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+main .project_wrapper {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 60vw;
+  border: none;
 }
