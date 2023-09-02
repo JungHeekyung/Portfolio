@@ -47,3 +47,13 @@ main .project_wrapper {
   grid-auto-rows: 60vw;
   border: none;
 }
+
+main .project_wrapper .project1 img {
+  width: 200px;
+  height: 120px;
+}
+main .project_wrapper .project2 img {
+  width: 200px;
+  height: 130px;
+  transform: translateY(45%);
+}
