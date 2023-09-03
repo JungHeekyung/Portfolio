@@ -57,3 +57,18 @@ main .project_wrapper .project2 img {
   height: 130px;
   transform: translateY(45%);
 }
+main .project_wrapper .project3 img {
+  width: 200px;
+  height: 120px;
+  transform: translateY(50%);
+}
+main .project_wrapper .project4 img {
+  width: 200px;
+  height: 120px;
+  transform: translateY(50%);
+}
+main .project_wrapper .project0 img {
+  width: 200px;
+  height: 120px;
+  transform: translateY(50%);
+}
