@@ -313,9 +313,9 @@ main .project_wrapper .project p {
   bottom: 0;
   background-color: #d7dade;
   width: 100%;
-  height: 60px;
+  height: 12.5vw;
   margin: 0;
-  line-height: 60px;
+  line-height: 12.5vw;
 }
 main .project_wrapper .project p a:hover {
   border-bottom: 1px solid #14303f;
@@ -326,7 +326,7 @@ main .project_wrapper .project p a:hover {
 main .project_wrapper .project1 img {
   width: 9.844vw;
   height: 9.844vw;
-  transform: translateY(50%);
+  transform: translateY(12.250vw);
   cursor: default;
 }
 main .project_wrapper .project2 img {
